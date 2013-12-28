@@ -4,6 +4,10 @@
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -11,7 +15,7 @@
     <div class="item active">
       <img src="/public/images/8176746583_d352e78650_c.jpg" alt="First image">
       <div class="carousel-caption">
-        Lovly dog
+        Dog picture 
       </div>
     </div>
     <div class="item"><img src="/public/images/8176799175_af066b2760_c.jpg" /><div class="carousel-caption">Dog</div></div>
