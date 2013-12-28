@@ -32,7 +32,7 @@ if (file_exists(__DIR__ . "/controllers/" . $routes->controller . ".php")) {
 	
 	$error = Errors::create(array(
 			'level'	=> '1', 
-			'title'	=> 'Someone found a 404 page',
+			'title'	=> 'Someone found missing controller',
 			'info'	=> "Controller :" . $routes->controller ." view :" . $routes->view 
 	));
 

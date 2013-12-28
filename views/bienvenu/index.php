@@ -28,12 +28,15 @@
         </div>
       </div>
 
+      <hr style="margin-top: 70px;"/>
+
+
       <div class="row" style="padding-top: 60px;">
-            <div class="col-md-4">
+            <div class="col-md-5">
               <?php require __DIR__ ."/../shared/stickynews.php"; ?>
               <?php require __DIR__ ."/../shared/news.php"; ?>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7">
               <?php require __DIR__ ."/../shared/carrousel.php"; ?>
            </div>
       </div>

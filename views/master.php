@@ -10,6 +10,7 @@
 
     <!-- Loading Flat UI -->
     <link href="/public/css/flat-ui.css" rel="stylesheet">
+    <link href="/public/css/personal.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="/public/images/favicon.ico">
 
@@ -34,7 +35,24 @@
 		 * TODO : Check is the file existe or log the error 
 		 *
 		 */
-		require __DIR__ . "/" .$routes->controller . "/" . $routes->view . ".php";
+		if (file_exists(__DIR__ . "/" .$routes->controller . "/" . $routes->view . ".php")) {
+			require __DIR__ . "/" .$routes->controller . "/" . $routes->view . ".php";
+                }
+		else {
+			
+			// Redirect to 404
+			define("error", "Cette page n'existe plus, le serveur nous dit pardon.");	
+	
+			$error = Errors::create(array(
+				'level'	=> '1', 
+				'title'	=> 'Someone found missing view',
+				'info'	=> "Controller :" . $routes->controller ." view :" . $routes->view 
+			));
+
+			header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
+			header("Status: 404 Not Found");
+			$_SERVER['REDIRECT_STATUS'] = 404;
+		}
 	?>
 
 	<?php	

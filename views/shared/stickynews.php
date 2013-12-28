@@ -3,11 +3,10 @@
 $stickynews = Stickynews::last();
 // TODO : Add this in CSS
 ?>
-<div style="">
-<b><?php echo $stickynews->title; ?><b><br ><small><i><?php echo $stickynews->date ?></i></small>
+<h6><img src="/public/images/icons/png/Icon-news.png" width="30" height="30"/> <?php echo $stickynews->title; ?><h6>
+<p class="palette-paragraph"> <img src="/public/images/icons/svg/calendar.svg" height="12" height="12" alt="Calendar"> <?php echo $stickynews->date ?></p>
 <hr />
-<p>
-  <?php echo $stickynews->leadin; ?><br />
-  <a href="index.php/news/view/<?php echo $stickynews->id; ?>">Voir plus</a>
-</p>
-</div>
+<small>
+  <?php echo $stickynews->leadin; ?><br /><br />
+<a href="index.php/news/sticky/<?php echo $stickynews->id; ?>" class="btn btn-block btn-lg btn-info">Voir cette nouvelle</a>
+</small>

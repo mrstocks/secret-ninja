@@ -4,6 +4,9 @@
  *
  */
 
-$news = News::find($routes->id);
-	
+if ($routes->view == 'sticky') {
+	$news = Stickynews::find($routes->id); 
+	} else {
+  	$news = News::find($routes->id);
+}
 ?>
