@@ -34,6 +34,8 @@
       <div class="row" style="padding-top: 60px;">
             <div class="col-md-5">
               <?php require __DIR__ ."/../shared/stickynews.php"; ?>
+              <br />
+	      <p>Plus de nouvelles</p>
               <?php require __DIR__ ."/../shared/news.php"; ?>
             </div>
             <div class="col-md-7">

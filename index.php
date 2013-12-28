@@ -18,6 +18,13 @@ require_once __DIR__ . "/models/init.php";
  */
 require_once __DIR__ . "/routes/routes.php";
 
+
+/**
+ * Get the helper
+ *
+ */
+require_once __DIR__ . "/helpers/helper.php";
+
 /**
  * Get the controller
  * TODO: 	This is hackable parse the routes

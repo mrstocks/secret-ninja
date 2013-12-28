@@ -44,36 +44,22 @@
       <div class="container" style="margin-top: 60px;">
         <div class="row">
           <div class="col-md-7">
-            <h3 class="footer-title">Subscribe</h3>
-            <p>Do you like this freebie? Want to get more stuff like this?<br/>
-              Subscribe to designmodo news and updates to stay tuned on great designs.<br/>
-              Go to: <a href="http://designmodo.com/flat-free" target="_blank">designmodo.com/flat-free</a>
+            <h3 class="footer-title">Un peut sur moi.</h3>
+            <img src="/public/images/IMG_0138.png" alt="Photo of mr stocks"  style="float: left; margin-right: 15px;" class="rounded"/>
+            <p>Bonjour, mon noms est Oliver je suis Anglais et j'ai travaill&eacute; dans l'informatique pour dix ans, en 2009/2010 j'ai 
+               decid&eacute; de prendre l'aire donc je suis venu dans la belle campagne normande pour faire mon m&eacute;ti&eacute; que 
+               je reve de faire, l'elevage canins.<br/>
+               Aussi je vais des site web pour les amis ou personnel vous aimez ce site je peut peut-etre vous aider.<br/>
+               Envoyez un mail dand ce cas: <a href="mailto:stocks.oliver@gmail.com" target="_blank">stocks.oliver@gmail.com</a>
             </p>
 
-            <p class="pvl">
-              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://designmodo.com/flat-free/" data-text="Flat UI Free - PSD&amp;amp;HTML User Interface Kit" data-via="designmodo">Tweet</a>
-							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-              <iframe src="http://ghbtns.com/github-btn.html?user=designmodo&repo=Flat-UI&type=watch&count=true" height="20" width="107" frameborder="0" scrolling="0" style="width:105px; height: 20px;" allowTransparency="true"></iframe>
-              <iframe src="http://ghbtns.com/github-btn.html?user=designmodo&repo=Flat-UI&type=fork&count=true" height="20" width="107" frameborder="0" scrolling="0" style="width:105px; height: 20px;" allowTransparency="true"></iframe>
-              <iframe src="http://ghbtns.com/github-btn.html?user=designmodo&type=follow&count=true" height="20" width="195" frameborder="0" scrolling="0" style="width:195px; height: 20px;" allowTransparency="true"></iframe>
-            </p>
-
-            <a class="footer-brand" href="http://designmodo.com" target="_blank">
-              <img src="/public/images/footer/logo.png" alt="Designmodo.com" />
-            </a>
           </div> <!-- /col-md-7 -->
 
           <div class="col-md-5">
             <div class="footer-banner">
-              <h3 class="footer-title">Get Flat UI Pro</h3>
-              <ul>
-                <li>Tons of Basic and Custom UI Elements</li>
-                <li>A Lot of Useful Samples</li>
-                <li>More Vector Icons and Glyphs</li>
-                <li>Pro Color Swatches</li>
-                <li>Bootstrap Based HTML/CSS/JS Layout</li>
-              </ul>
-              Go to: <a href="http://designmodo.com/flat" target="_blank">designmodo.com/flat</a>
+              
+	     <h3 class="footer-title">Derniere Nouvelles</h3>
+               <?php  require __DIR__ . "/news.php" ?>
             </div>
           </div>
         </div>

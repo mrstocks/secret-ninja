@@ -1,6 +1,3 @@
-<br />
-<p>Plus de lecture</p>
-
 <?php
 
 // TODO get the last 10 news

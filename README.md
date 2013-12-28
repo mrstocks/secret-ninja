@@ -11,3 +11,5 @@ TODO List:
   * News module
     * When uploading a new image in the backend we must make a thumb for 
     * The image have to centered and "fixed"
+  * Dogs controller
+    * Rename the testright to textright code also  
