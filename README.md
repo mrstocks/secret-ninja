@@ -1,5 +1,16 @@
-Secret ninja work list 
+Secret ninja
 
+<h4>General information</h4>
+Url : http://elevage-fees-de-celestia.fr:3333/
+Mysql Admin: http://elevage-fees-de-celestia.fr:3333/phpmyadmin/
+
+
+<pre>
+ - [ ] To do.
+ - [X] done.
+</pre>
+
+<h4>TODO list</h4>
 TODO List:
   * Core application
     * - [ ] Parse the url and remove slashes
@@ -26,7 +37,4 @@ TODO List:
     * - [ ] Add address and telephone numer
     * - [ ] Link to section with CV etc
 
-<pre>
- - [ ] To do.
- - [X] done.
-</pre>
+
