@@ -17,7 +17,23 @@ class Helper {
 	
 		return $dogs;	
 	}
+	
+	/**
+	 * Call if not found 
+         *
+         */
+	public function not_found($info) {
+		$error = Errors::create(array(
+			'level'	=> '1', 
+			'title'	=> $info[0],
+			'info'	=> $info[1] 
+		));
 
+		$host  = $_SERVER['HTTP_HOST'];
+		$uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+		header("Location: http://$host$uri");
+		exit;
+	}
 
 }
 
