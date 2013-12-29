@@ -6,7 +6,7 @@
     <div class="navbar-collapse collapse navbar-collapse-01">
       <ul class="nav navbar-nav navbar-left">
         <li class="<?php if ($routes->controller == 'bienvenu') { echo 'active'; } ?>"><a href="/">Accueil</a></li>
-        <li><a href="/index.php/chiens">Les toutous<span class="navbar-unread">1</span></a>
+        <li class="<?php if ($routes->controller == 'chiens') { echo 'active'; } ?>"><a href="#">Les toutous<span class="navbar-unread">1</span></a>
           <ul>
             <?php 
             $dog_menu = $helper->get_dogs_list();	
