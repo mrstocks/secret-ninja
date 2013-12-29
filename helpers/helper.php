@@ -35,6 +35,17 @@ class Helper {
 		exit;
 	}
 
+	/** 
+	 * Back link
+         *
+         */
+	public function back_link($class, $name) {
+		$host  = $_SERVER['HTTP_HOST'];
+
+		return "<a href='http://$host' class='btn btn-block btn-lg $class'>$name</a>";
+
+	}
+
 }
 
 $helper = New Helper(); 

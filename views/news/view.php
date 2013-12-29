@@ -26,6 +26,9 @@
 			<a href="#main"></a>
 			<p><b><?php echo $news->leadin ?></b></p>
 			<p><?php echo $news->main ?></p>
+			
+			<?php echo $helper->back_link('btn-inverse',"Retour a l'acceuil"); ?>
+		
 		</div>
 	</div>
 </div>
