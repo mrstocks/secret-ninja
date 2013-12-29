@@ -17,8 +17,8 @@
           </ul> <!-- /Sub menu -->
         </li>
         <li><a href="/index.php/chiot">Les touts petits</a></li>
-        <li><a href="/indes.php/installation">Installation</a></li>
-        <li><a href="/indes.php/contact">Contactez nous</a></li>
+        <li><a href="/index.php/installation">Installation</a></li>
+        <li><a href="/index.php/contact">Contactez nous</a></li>
       </ul>
     </div><!--/.nav -->
   </div>
