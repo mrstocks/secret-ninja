@@ -17,7 +17,7 @@ Datamapping ORM :http://www.phpactiverecord.org/ We use the developper version n
       * - [ ] Parse the url and remove slashes
     *  Add helpers
       * - [X] Error must redirect and log the errors  
-      * - [ ] Image helper
+      * - [X] Image helper
       * - [X] Menu helper
       * - [X] Back link
   * Bienvenu
