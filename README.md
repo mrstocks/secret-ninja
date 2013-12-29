@@ -13,7 +13,8 @@ Datamapping ORM :http://www.phpactiverecord.org/ We use the developper version n
 
 <h4>TODO list</h4>
   * Core application
-    * - [ ] Parse the url and remove slashes
+    * Routes
+      * - [ ] Parse the url and remove slashes
     *  Add helpers
       * - [X] Error must redirect and log the errors  
       * - [ ] Image helper
@@ -31,6 +32,7 @@ Datamapping ORM :http://www.phpactiverecord.org/ We use the developper version n
     * - [ ] Video isn't the right size 
     * - [ ] link on the footer don't work, need to make a contact section
     * - [ ] General UFT8 problem all the édon't work
+    * - [ ] The footer is not responsive
   * Puppies section
   * Contact section
     * - [ ] Add Gmail map to come and visit me
