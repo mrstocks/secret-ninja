@@ -33,19 +33,12 @@ require_once __DIR__ . "/helpers/helper.php";
 if (file_exists(__DIR__ . "/controllers/" . $routes->controller . ".php")) {
 	require_once (__DIR__ . "/controllers/" . $routes->controller . ".php");
 } else {
-
-	// Redirect to 404
-	define("error", "Cette page n'existe plus, le serveur nous dit pardon.");	
+	$info = array (
+		"Someone found a 404, missing a controller", 
+		"Controller :" . $routes->controller ." view :" . $routes->view
+	);
+	$helper::not_found($info);
 	
-	$error = Errors::create(array(
-			'level'	=> '1', 
-			'title'	=> 'Someone found missing controller',
-			'info'	=> "Controller :" . $routes->controller ." view :" . $routes->view 
-	));
-
-	header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
-	header("Status: 404 Not Found");
-	$_SERVER['REDIRECT_STATUS'] = 404;
 }
 
 /**
