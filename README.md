@@ -1,7 +1,7 @@
-Secret ninja
+<h1>Secret ninja</h1>
 
 <h4>General information</h4>
-Url : http://elevage-fees-de-celestia.fr:3333/
+Url : http://elevage-fees-de-celestia.fr:3333/<br />
 Mysql Admin: http://elevage-fees-de-celestia.fr:3333/phpmyadmin/
 
 
@@ -11,7 +11,6 @@ Mysql Admin: http://elevage-fees-de-celestia.fr:3333/phpmyadmin/
 </pre>
 
 <h4>TODO list</h4>
-TODO List:
   * Core application
     * - [ ] Parse the url and remove slashes
     *  Add helpers
