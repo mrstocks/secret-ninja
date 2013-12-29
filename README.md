@@ -2,6 +2,7 @@
 
 <h4>General information</h4>
 Url : http://elevage-fees-de-celestia.fr:3333/<br />
+Template : http://62.210.239.213:3333/public/Flat-UI-master/<br />
 Mysql Admin: http://elevage-fees-de-celestia.fr:3333/phpmyadmin/
 
 
@@ -17,6 +18,7 @@ Mysql Admin: http://elevage-fees-de-celestia.fr:3333/phpmyadmin/
       * - [X] Error must redirect and log the errors  
       * - [ ] Image helper
       * - [X] Menu helper
+      * - [X] Back link
   * Bienvenu
     * - [ ] Add a relation mysql -> carrousel
   * News module
