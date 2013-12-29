@@ -39,19 +39,12 @@
 			require __DIR__ . "/" .$routes->controller . "/" . $routes->view . ".php";
                 }
 		else {
-			
-			// Redirect to 404
-			define("error", "Cette page n'existe plus, le serveur nous dit pardon.");	
+			$info = array (
+				"Someone found a 404, missing a view", 
+				"Controller :" . $routes->controller ." view :" . $routes->view
+			);
+			$helper::not_found($info);
 	
-			$error = Errors::create(array(
-				'level'	=> '1', 
-				'title'	=> 'Someone found missing view',
-				'info'	=> "Controller :" . $routes->controller ." view :" . $routes->view 
-			));
-
-			header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
-			header("Status: 404 Not Found");
-			$_SERVER['REDIRECT_STATUS'] = 404;
 		}
 	?>
 
