@@ -7,6 +7,12 @@ ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 
 /**
+ * Require my stupid config
+ * If someone wants to fix me. please do
+ */
+require_once __DIR__ . "/config/config.php";
+
+/**
  * Init the models 
  *
  */

@@ -34,6 +34,30 @@ class Helper {
 		header("Location: http://$host$uri");
 		exit;
 	}
+	
+	/**
+	 * Save typing using size of the image
+	 *
+	 */
+	public function image_tag($filename, $class) {
+		list($width, $height, $type, $attr) = getimagesize(__PATH__ . $filename);
+
+		$host  = $_SERVER['HTTP_HOST'];
+	
+		return "<img src='http://$host$filename' height='".$height."' width='".$width."' class='". $class ."' />";
+	}
+
+	/**
+	 * display an image with custom size 
+	 * attibutes: $option array heigh, width, class 
+	 */
+	public function image_tag_with_options($filename, $options) {
+		$host  = $_SERVER['HTTP_HOST'];
+		$uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+	
+		return "<img src='http://$host$filename' height='". $options['height']."' width='".$options['width']."' class='". $options['class'] ."' />";
+
+	}
 
 	/** 
 	 * Back link

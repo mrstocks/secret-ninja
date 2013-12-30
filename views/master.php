@@ -21,7 +21,8 @@
   </head>
   <body>
     <div class="container">
-	<?php 
+	
+	<?php
 		/**
 		 * A nice menu
 		 *
