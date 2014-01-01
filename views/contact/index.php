@@ -1,6 +1,6 @@
 <div class="container">
  	<div class="row">
- 		<div class="col-md-12">
+ 		<div>
  			<div class="<?php echo $alert_class?>"><?php echo $alert_msg?></div>
  			<h4>Get In Touch</h4>
  			<h6>Please locate us using our map below.<br/>
@@ -71,4 +71,8 @@
 					</div>
  					</div>
  			</div>
+</div>
+
+<div class="gmap">
+<iframe style="width: 100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=La+Guilti%C3%A8re,+Thub%C5%93uf&amp;aq=1&amp;oq=la+guilti&amp;sll=48.150687,-0.643962&amp;sspn=1.172755,2.469177&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=La+Guilti%C3%A8re,+Thub%C5%93uf,+Mayenne,+Pays+de+la+Loire&amp;z=14&amp;ll=48.491066,-0.449788&amp;output=embed"></iframe><br /><small><a href="https://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=La+Guilti%C3%A8re,+Thub%C5%93uf&amp;aq=1&amp;oq=la+guilti&amp;sll=48.150687,-0.643962&amp;sspn=1.172755,2.469177&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=La+Guilti%C3%A8re,+Thub%C5%93uf,+Mayenne,+Pays+de+la+Loire&amp;z=14&amp;ll=48.491066,-0.449788" style="color:#0000FF;text-align:left">Agrandir le plan</a></small>
 </div>
