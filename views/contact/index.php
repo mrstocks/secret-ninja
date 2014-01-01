@@ -25,19 +25,19 @@
 			  <div class="form-group">
 			    <label for="cnt_email" class="col-lg-2 control-label">Email</label>
 			    <div class="col-lg-9">
-			      <input type="email" class="form-control" id="cnt_email" placeholder="Email Adress">
+			      <input type="email" class="form-control" id="cnt_email" name="cnt_email" placeholder="Email Adress">
 			    </div>
 			  </div>
 			  <div class="form-group">
 			    <label for="cnt_msg_subject" class="col-lg-2 control-label">Subject</label>
 			    <div class="col-lg-9">
-			      <input type="text" class="form-control" id="cnt_msg_subject" name="cnt_msg_subject" placeholder="Message Subject">
+			      <input type="text" class="form-control" name="cnt_msg_subject" id="cnt_msg_subject" name="cnt_msg_subject" placeholder="Message Subject">
 			    </div>
 			  </div>
 			  <div class="form-group">
 			    <label for="cnt_msg" class="col-lg-2 control-label">Message</label>
 			    <div class="col-lg-9">
-			    <textarea class="form-control" name="cnt_msg" id="cnt_msg" rows="7"></textarea>
+			    <textarea class="form-control" name="cnt_msg" name="cnt_msg" id="cnt_msg" rows="7"></textarea>
 			    </div>
 			  </div>
 			  <div class="form-group">

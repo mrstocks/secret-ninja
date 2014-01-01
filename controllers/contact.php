@@ -35,7 +35,7 @@ if(isset($_POST['submit']))
 	// 0 = off (for production use)
 	// 1 = client messages
 	// 2 = client and server messages
-	$mail->SMTPDebug = 2;
+	$mail->SMTPDebug = 0;
 
 	//Ask for HTML-friendly debug output
 	$mail->Debugoutput = 'html';
@@ -61,8 +61,8 @@ if(isset($_POST['submit']))
 	//Set the subject line
 	$mail->Subject = 'WEBSITE: '. $_POST['cnt_msg_subject'];
 	//Replace the plain text body with one created manually
-	$mail->msgHTML($cnt_msg_body);
-	$mail->AltBody = $cnt_msg_body;
+	$mail->msgHTML($_POST['cnt_msg']);
+	$mail->AltBody = $_POST['cnt_msg'];
 
 	//send the message, check for errors
 	if (!$mail->send()) {
