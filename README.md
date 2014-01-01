@@ -39,5 +39,5 @@ Datamapping ORM :http://www.phpactiverecord.org/ We use the developper version n
     * - [ ] Add Email form using mail email service
     * - [ ] Add address and telephone numer
     * - [ ] Link to section with CV etc
-
+    * - [ ] UI Faulty. The footer first cases pop up behind the address
 
