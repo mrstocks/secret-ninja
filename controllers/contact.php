@@ -49,17 +49,17 @@ if(isset($_POST['submit']))
 	//Whether to use SMTP authentication
 	$mail->SMTPAuth = true;
 	//Username to use for SMTP authentication - use full email address for gmail
-	$mail->Username = "stocks.oliver@gmail.com";
+	$mail->Username = "fees.de.celestia@gmail.com";
 	//Password to use for SMTP authentication
-	$mail->Password = "yourpassword";
+	$mail->Password = "websitefeesdecelestia";
 	//Set who the message is to be sent from
-	$mail->setFrom('stocks.oliver@gmail.com', 'Stocks Oliver');
+	$mail->setFrom($_POST['cnt_email'], $_POST['cnt_name']);
 	//Set an alternative reply-to address
-	$mail->addReplyTo('stocks.oliver@gmail.com', 'Stocks Oliver');
+	$mail->addReplyTo($_POST['cnt_email'], $_POST['cnt_name']);
 	//Set who the message is to be sent to
-	$mail->addAddress('whoto@example.com', 'John Doe');
+	$mail->addAddress('stocks.oliver@gmail.com', 'Stocks Oliver');
 	//Set the subject line
-	$mail->Subject = 'Contact Form Message';
+	$mail->Subject = 'WEBSITE: '. $_POST['cnt_msg_subject'];
 	//Replace the plain text body with one created manually
 	$mail->msgHTML($cnt_msg_body);
 	$mail->AltBody = $cnt_msg_body;
