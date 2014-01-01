@@ -61,6 +61,14 @@
               
 	     <h3 class="footer-title">Derniere Nouvelles</h3>
                <?php  require __DIR__ . "/news.php" ?>
+              <ul>
+              <?php 
+		$end = microtime(true);
+		$time = number_format(($end - $start), 2);
+
+		echo '<li>This page loaded in ', $time, ' seconds</li>';
+		?> 
+                </ul>
             </div>
           </div>
         </div>
