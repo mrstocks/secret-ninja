@@ -5,6 +5,10 @@ Url : http://elevage-fees-de-celestia.fr:3333/<br />
 Template : http://62.210.239.213:3333/public/Flat-UI-master/<br />
 Mysql Admin: http://elevage-fees-de-celestia.fr:3333/phpmyadmin/<br />
 Datamapping ORM :http://www.phpactiverecord.org/ We use the developper version not the stable one
+Admin:
+  * username: mrstocks
+  * password: oliver
+
 
 <pre>
  - [ ] To do.
