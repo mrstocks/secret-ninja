@@ -70,6 +70,50 @@ class Helper {
 
 	}
 
-}
+	/**
+	 * Carrousel 
+	 *
+	 */
+	public static function carrousel($data_object) {
+		echo '<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">';
+		
+		// Indicators
+		echo '<ol class="carousel-indicators">';
+		foreach ($data_object as $id => $value) {
+			if ($id == 0) {
+			echo '<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>';
+			} else {
+				echo '<li data-target="#carousel-example-generic" data-slide-to="' . $id . '"></li>';
+			}
+			
+		}
+		echo '</ol>';
+			
+		echo '<div class="carousel-inner">';
+	
+		foreach ($data_object as $id => $value) {
+			if ($id == 0) {	
+				echo ' 
+     				<div class="item active">
+					'. self::image_tag($value->filename,'rounded').'
+      					<div class="carousel-caption">
+        					'.$value->title.'
+      					</div>
+    				</div>';
+   			} else {
+    				echo '<div class="item">'. self::image_tag($value->filename,'rounded').'<div class="carousel-caption">'.$value->title.'</div></div>';
+			}		
+		}
 
+		echo '
+			</div>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>';
+
+	}
+}
 $helper = New Helper(); 
+?>
