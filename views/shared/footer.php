@@ -4,7 +4,7 @@
             <?php echo helper::image_tag('/public/images/icons/svg/compas.svg', 'title-image'); ?>
             <h3 class="tile-title">Visitez nous</h3>
             <p>Visitez l'elevage, ont a mis in carte pour vous.</p>
-            <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Carte google</a>
+            <a class="btn btn-primary btn-large btn-block" href="/index.php/contact#map">Carte google</a>
           </div>
         </div>
 
@@ -14,7 +14,7 @@
             <?php echo helper::image_tag('/public/images/icons/svg/loop.svg', 'title-image'); ?>
             <h3 class="tile-title">Suivi des chiens</h3>
             <p>Nous suivons tout les chien par telephone ou email.</p>
-            <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Contact nous</a>
+            <a class="btn btn-primary btn-large btn-block" href="/index.php/contact#contact">Contact nous</a>
           </div>
         </div>
 
@@ -23,7 +23,7 @@
             <?php echo helper::image_tag('/public/images/icons/svg/pencils.svg', 'title-image'); ?>
             <h3 class="tile-title">Envie de papotter?</h3>
             <p>C'est par ici, ont parle de tout et de rien.</p>
-            <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">C'est par la</a>
+            <a class="btn btn-primary btn-large btn-block" href="mailto:stocks.oliver@gmail.com">stocks.oliver@gmail.com</a>
           </div>
         </div>
 
@@ -32,7 +32,7 @@
             <?php echo helper::image_tag('/public/images/icons/svg/chat.svg', 'title-image'); ?>
             <h3 class="tile-title">Social network</h3>
             <p>Nous aimons facebook et twitter, passez nous voir.</p>
-            <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Facebook</a>
+            <a class="btn btn-primary btn-large btn-block" href="http://www.facebook.com/finouka.stocks">Facebook</a>
           </div>
 
         </div>

@@ -32,6 +32,11 @@
 }
 
 .required_star {
-font-weight:bold;
-color:#F00;
+	font-weight:bold;
+	color:#F00;
+}
+
+.border-right {
+	border-right: 1px solid #CCC;
+	margin-right: 20px;
 }

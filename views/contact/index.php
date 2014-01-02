@@ -127,6 +127,7 @@
 	<!-- Loading JS for Google Maps -->
   	 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpH0KBf6QUYGff2dAFwbVhEtYrF_zfA_U&sensor=false">
     </script>
+    <a name="map"></a>
     <script type="text/javascript">
 
       function initialize() {
