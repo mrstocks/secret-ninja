@@ -29,15 +29,22 @@ Datamapping ORM :http://www.phpactiverecord.org/ We use the developper version n
     * - [X] Rename the testright to textright code also
   * General UI
     * - [ ] All the design is pushed right there i don't know why maybe a div missing
-    * - [ ] Video isn't the right size 
+    * - [ ] Video isn't the right size
     * - [ ] link on the footer don't work, need to make a contact section
-    * - [ ] General UFT8 problem all the édon't work
+    * - [ ] General UFT8 problem all the é don't work
     * - [ ] The footer is not responsive
   * Puppies section
   * Contact section
-    * - [ ] Add Gmail map to come and visit me
+    * - [*] Add Gmail map to come and visit me
     * - [ ] Add Email form using mail email service
     * - [ ] Add address and telephone numer
-    * - [ ] Link to section with CV etc
-
-
+    * - [*] Link to section with CV etc
+    * - [*] UI Faulty. The footer first cases pop up behind the address
+    * - [ ]  Translate from English to French
+    * - [X] Add Gmail map to come and visit me
+    * - [ ] add Latitude and Longitude of current location
+    * - [ ] Obtain maps API key
+    * - [X] Add Email form using mail email service
+    * - [ ] Fill in username and password for gmail account to be used
+    * - [X] Add address and telephone number
+    * - [X] Link to section with CV etc
