@@ -62,9 +62,11 @@
 					$cnt_email_message .= "Subject: ".$msg_subject."\n";
 					$cnt_email_message .= "Message: ".$message."\n";
 
+	
 					date_default_timezone_set('Etc/UTC');
-
-					require '../../phpMailer/PHPMailerAutoload.php';
+	
+					# REAME All ready included in the controller
+					# require '../../phpMailer/PHPMailerAutoload.php';
 
 					//Create a new PHPMailer instance
 					$mail = new PHPMailer();
@@ -88,9 +90,11 @@
 					//Whether to use SMTP authentication
 					$mail->SMTPAuth = true;
 					//Username to use for SMTP authentication - use full email address for gmail
-					$mail->Username = "stocks.oliver@gmail.com";
+					//Username to use for SMTP authentication - use full email address for gmail
+					$mail->Username = "fees.de.celestia@gmail.com";
 					//Password to use for SMTP authentication
-					$mail->Password = "yourpassword";
+					$mail->Password = "websitefeesdecelestia";
+
 					//Set who the message is to be sent from
 					$mail->setFrom('stocks.oliver@gmail.com', 'Stocks Oliver');
 					//Set an alternative reply-to address
@@ -142,7 +146,7 @@
  			<div class="<?php echo $alert_class?>"><?php echo $alert_msg?></div>
  			<h4>Contactez-nous</h4>
  			<h6>S'il vous plaît nous localiser à l'aide de notre carte ci-dessous.<br/>
- 				Vous pouvez aussi parler à nous en laissant un message ici.</h6>
+ 				Vous pouvez aussi parler à nous en laissant <a href="#contact">un message ici.</a></h6>
 
  			<!-- Google maps will be drawn here -->
      		 <div class="gmap" id="map-canvas">
@@ -151,6 +155,7 @@
 		</div>
  		<div class="col-md-9">
  			<div class="panel panel-info">
+				<a name="contact"></a>
  				<div class="panel-heading">Laissez votre message ici</div>
 				<div class="panel-body">
 						<form class="form-horizontal" role="form"  name="contact_form" id="contact_form" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
@@ -189,9 +194,10 @@
 		</div>
 
 		<div class="col-md-3">
- 				<div class="panel panel-info">Mon Adresse</div>
+				<?php echo helper::image_tag('/public/images/arrow.png', ''); ?>
 					<div class="panel-body">
                                   <div class="address">
+ 				<div class="panel panel-info">Mon Adresse</div>
                                       <address>
                                          <!-- Company name -->
                                          <label>Name:</label> Oliver Stocks<br/>

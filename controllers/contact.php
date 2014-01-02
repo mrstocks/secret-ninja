@@ -69,7 +69,7 @@ if(isset($_POST['submit']))
 		//log this erros somewhere else in the production version
 	    echo "Mailer Error: " . $mail->ErrorInfo;
 	} else {
-	    echo "Thanks for you message. We will get in touch as soon as possible";
+	    echo "Thanks for you message. We will get in touch as soon as possible.";
 	}
 }
 ?>

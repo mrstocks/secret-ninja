@@ -70,6 +70,69 @@ class Helper {
 
 	}
 
-}
+	/**
+	 * Carrousel 
+	 *
+	 */
+	public static function carrousel($data_object) {
+		echo '<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">';
+		
+		// Indicators
+		echo '<ol class="carousel-indicators">';
+		foreach ($data_object as $id => $value) {
+			if ($id == 0) {
+			echo '<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>';
+			} else {
+				echo '<li data-target="#carousel-example-generic" data-slide-to="' . $id . '"></li>';
+			}
+			
+		}
+		echo '</ol>';
+			
+		echo '<div class="carousel-inner">';
+	
+		foreach ($data_object as $id => $value) {
+			if ($id == 0) {	
+				echo ' 
+     				<div class="item active">
+					'. self::image_tag($value->filename,'rounded').'
+      					<div class="carousel-caption">
+        					'.$value->title.'
+      					</div>
+    				</div>';
+   			} else {
+    				echo '<div class="item">'. self::image_tag($value->filename,'rounded').'<div class="carousel-caption">'.$value->title.'</div></div>';
+			}		
+		}
 
+		echo '</div>';
+		self::carrousel_controls();
+		echo '</div>';	
+
+	}
+
+	/**
+	 * Pointless function for the carrousel 
+	 */
+	public static function carrousel_controls() {
+	
+		echo'<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		<a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		';
+	}
+
+	public static function accordion($id,$title,$info) {
+		echo '		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse'.$id.'">'.$title.'</a></h4>
+			</div>
+			<div id="collapse'.$id.'" class="panel-collapse collapse in">
+				<div class="panel-body">'.$info.'</div>
+			</div>
+		</div>';
+	}
+}
 $helper = New Helper(); 
+?>
