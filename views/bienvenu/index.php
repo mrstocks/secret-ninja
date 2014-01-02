@@ -39,7 +39,7 @@
               <?php require __DIR__ ."/../shared/news.php"; ?>
             </div>
             <div class="col-md-7">
-              <?php require __DIR__ ."/../shared/carrousel.php"; ?>
+		<?php helper::carrousel($carrousel); ?>
            </div>
       </div>
 
