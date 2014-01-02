@@ -44,12 +44,9 @@ Datamapping ORM :http://www.phpactiverecord.org/ We use the developper version n
 =======
     * - [ ]  Translate from English to French
     * - [X] Add Gmail map to come and visit me
-              * - [ ] add Latitude and Longitude of current location
-              * - [ ] Obtain maps API key
+    * - [ ] add Latitude and Longitude of current location
+    * - [ ] Obtain maps API key
     * - [X] Add Email form using mail email service
-              * - [ ] Fill in username and password for gmail account to be used
+    * - [ ] Fill in username and password for gmail account to be used
     * - [X] Add address and telephone number
     * - [X] Link to section with CV etc
-
->>>>>>> Stashed changes
-
