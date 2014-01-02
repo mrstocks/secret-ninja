@@ -105,14 +105,33 @@ class Helper {
 			}		
 		}
 
-		echo '
+		echo '</div>';
+		self::carrousel_controls();
+		echo '</div>';	
+
+	}
+
+	/**
+	 * Pointless function for the carrousel 
+	 */
+	public static function carrousel_controls() {
+	
+		echo'<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		<a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		';
+	}
+
+	public static function accordion($id,$title,$info) {
+		echo '		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse'.$id.'">'.$title.'</a></h4>
 			</div>
-
-			<!-- Controls -->
-			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			<div id="collapse'.$id.'" class="panel-collapse collapse in">
+				<div class="panel-body">'.$info.'</div>
+			</div>
 		</div>';
-
 	}
 }
 $helper = New Helper(); 
