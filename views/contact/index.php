@@ -4,7 +4,7 @@
   		/*
   			TO DO
 			[ ] create  mechanism to ensure that script is not sent twice
-			[ ]Change Latitude and Longitude of the map so it fits that required
+			[ ] Change Latitude and Longitude of the map so it fits that required
 		*/
 	
   			$alert_msg = "";   //Store the success or failure message in the alert box
@@ -17,7 +17,7 @@
 	 				global $alert_msg;
 	 				global $alert_class;
 	 				global $valid;
-					$alert_msg .= "Sorry, but we could not receive your message due to the following reason(s):<br/> ";
+					$alert_msg .= "Désolé, mais nous n'avons pas reçu votre message pour la raison  suivante:<br/> ";
 					$alert_msg .= "<ul>";
 					$alert_msg .= $error;
 					$alert_msg .= "</ul>";
@@ -27,7 +27,7 @@
 
 				if(!isset($_POST['cnt_email']) || !isset($_POST['cnt_msg']))
 				{
-					died('<li>Sorry, there appears to be a problem with your form submission. Please check your entries and try again</li>');
+					died('<li>Désolé, il semble y avoir un problème avec votre formulaire de demande. S\'il vous plaît vérifier vos entrées et réessayez</li>');
 				}
 
 				$full_name = $_POST['cnt_name'];
@@ -39,12 +39,12 @@
 				$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 			 	if(preg_match($email_exp,$email_from)==0)
 			 	{
-			  		$error_message .= '<li>The Email Address you entered does not appear to be valid.</li>';
+			  		$error_message .= '<li>L\'adresse e-mail que vous avez entré ne semble pas être valide.</li>';
 			  	}
 
   				if(strlen($_POST['cnt_msg']) < 5)
   				{
-  					$error_message .= "<li>Your message is too short</li>";
+  					$error_message .= "<li>Votre message est trop court</li>";
   				}
 
   				if(strlen($error_message) >0)
@@ -100,7 +100,7 @@
 					//Set an alternative reply-to address
 					$mail->addReplyTo('stocks.oliver@gmail.com', 'Stocks Oliver');
 					//Set who the message is to be sent to
-					$mail->addAddress('whoto@example.com', 'John Doe');
+					$mail->addAddress('fees.de.celestia@gmail.com', 'Elevage Website');
 					//Set the subject line
 					$mail->Subject = 'Contact Form Message';
 					//Replace the plain text body with one created manually
@@ -112,11 +112,11 @@
 					{
 						//log this error somewhere else in the production version
 					   echo "Mailer Error: " . $mail->ErrorInfo;
-					   died("<li>We are having a problem with our servers please retry later</li>");
+					   died("<li>Nous avons un problème avec nos serveurs s'il vous plaît réessayer plus tard</li>");
 					}
 					else
 					{
-					  $alert_msg = "Your message has been received successfully and we will get back to you as soon as possible";
+					  $alert_msg = "Votre message a été reçu avec succès et nous reviendrons vers vous dès que possible";
 	 				  $alert_class = "alert alert-success";
 					  $valid = FALSE; // This is to ensure that form data values are not filled
 					}
@@ -131,8 +131,8 @@
 
       function initialize() {
         var mapOptions = {
-          center: new google.maps.LatLng(-34.397, 150.644),
-          zoom: 8
+          center: new google.maps.LatLng(48.491066, -0.449788),
+          zoom: 10
         };	
         var map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
