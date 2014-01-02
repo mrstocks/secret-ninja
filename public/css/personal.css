@@ -6,3 +6,32 @@
 	float: left;
 	margin-right: 15px;
 }
+
+/* To be changed */
+.gmap{
+	height: 340px;
+	width:90%;
+	margin:0 auto;
+	border: 1px solid red;
+	margin-bottom: 10px;
+}
+
+.address label{
+	font-weight: bold;
+}
+.address{
+	font-size: smaller;
+}
+
+.alert{
+	font-size:smaller;
+}
+
+.panel-heading{
+	text-align: center;
+}
+
+.required_star {
+font-weight:bold;
+color:#F00;
+}
