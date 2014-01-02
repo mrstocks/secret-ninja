@@ -198,7 +198,6 @@
 				<?php echo helper::image_tag('/public/images/arrow.png', ''); ?>
 					<div class="panel-body">
                                   <div class="address">
- 				<div class="panel panel-info">Mon Adresse</div>
                                       <address>
                                          <!-- Company name -->
                                          <label>Name:</label> Oliver Stocks<br/>
@@ -209,8 +208,8 @@
                                          France<br/>
                                          <!-- Phone number -->
                                          <label>Phone: </label> (0033) 6765913293.
-                                         <label>Email:</label><a href="mailto:stocks.oliver@gmail.com">stocks.oliver@gmail.com</a><br/>
-                                         <label>CV: </label><a href="#"> Download PDF version</a>
+                                         <label>Email:</label> <a href="mailto:stocks.oliver@gmail.com">stocks.oliver@gmail.com</a><br/>
+                                         <label>CV: </label> <a href="#">Download PDF version</a>
 								</address>
 					</div>
  					</div>
