@@ -40,14 +40,14 @@ Admin:
   * Puppies section
   * Contact section
     * - [*] Add Gmail map to come and visit me
-    * - [ ] Add Email form using mail email service
-    * - [ ] Add address and telephone numer
+    * - [X] Add Email form using mail email service
+    * - [X] Add address and telephone numer
     * - [*] Link to section with CV etc
     * - [*] UI Faulty. The footer first cases pop up behind the address
-    * - [ ]  Translate from English to French
+    * - [X]  Translate from English to French
     * - [X] Add Gmail map to come and visit me
-    * - [ ] add Latitude and Longitude of current location
-    * - [ ] Obtain maps API key
+    * - [X] add Latitude and Longitude of current location
+    * - [X] Obtain maps API key
     * - [X] Add Email form using mail email service
     * - [X] Fill in username and password for gmail account to be used
     * - [X] Add address and telephone number
