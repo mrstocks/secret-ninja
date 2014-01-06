@@ -24,10 +24,10 @@ foreach($matings as $id => $mating) {
 	</div>
 	<div class="col-mb-4" style="margin-left: 15px;">
 		<h3>Comment?</h3>	
-		<p>Nous sommes un tout petit élevage de dogues allemand nous produisons desparfait chiots 
-		arlequins, noirs et bleus. <br />
+		<p>Nous sommes un tout petit élevage de dogues allemans, nous produisons des parfait chiots 
+		arlequins, noirs et bleus LOF. <br />
 		Il vous suffit de cliquez sur un boutton a gauche pour avoir des photos est une description.</br />
-		La pluspart des chiots sont destiné a l'expo ou au sein d'une jentil famille.<br />
+		La pluspart des chiots sont destiné a l'expo ou au sein d'unegentil famille.<br />
 		<br />
 		Vous pouvez aussi consulter : <br />
 		<a href="/index.php/gallerie/">Notre gallerie</a><br />
