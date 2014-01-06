@@ -124,10 +124,9 @@ class Helper {
 
 	public static function accordion($id,$title,$info) {
 		#TODO change the button
-		echo '	
-		<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal'.$id.'" style="margin: 15px;">
-  			'.$title.'
-		</button>
+		echo '
+		<a data-toggle="modal" data-target="#myModal'.$id.'" style="padding: 15px">'. self::image_tag("/public/images/finouka.png",'') .'
+		</a>
 
 		<div class="modal fade" id="myModal'.$id.'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
