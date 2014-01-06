@@ -1,7 +1,7 @@
      <div class="row demo-tiles" style="padding-top: 50px;">
         <div class="col-md-3">
           <div class="tile">
-            <?php echo helper::image_tag('/public/images/icons/svg/compas.svg', 'title-image'); ?>
+	    <img src="/public/images/icons/svg/compas.svg" height="100" width="100" class="title-image" />
             <h3 class="tile-title">Visitez nous</h3>
             <p>Visitez l'elevage, ont a mis in carte pour vous.</p>
             <a class="btn btn-primary btn-large btn-block" href="/index.php/contact#map">Carte google</a>
