@@ -33,7 +33,7 @@
 
 	<?php
 		/**
-		 * TODO : Check is the file existe or log the error 
+		 * TODO : Check is the file exists or log the error 
 		 *
 		 */
 		if (file_exists(__DIR__ . "/" .$routes->controller . "/" . $routes->view . ".php")) {
