@@ -1,6 +1,6 @@
 <?php
 /****
-* This class just saves typeing too much and take the legic of the view out of
+* This class just saves typing too much and take the legic of the view out of
 * the controller
 *
 */

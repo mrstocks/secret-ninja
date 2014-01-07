@@ -15,6 +15,20 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+
+DROP TABLE IF EXISTS `gallerysection`;
+CREATE TABLE `gallerysection` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `dog_id` int(11) NOT NULL,
+  `picture_number` int(11) NOT NULL,
+  `filename` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+LOCK TABLES `gallerysection` WRITE;
+INSERT INTO `gallerysection` VALUES (1,1,1,'/public/images/dogimage/finouka1.jpg'),(2,1,2,'/public/images/944830_586112368128673_13451773_n.jpg'),(3,1,3,'/public/images/dogimage/finouka3.jpg'),(4,1,4,'/public/images/dogimage/finouka4.jpg');
+UNLOCK TABLES;
+
 --
 -- Table structure for table `dogimages`
 --
