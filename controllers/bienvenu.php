@@ -4,5 +4,4 @@
 
 $carrousel =Frontpagecarrousel::all();
 
-
 ?>
