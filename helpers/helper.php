@@ -5,6 +5,13 @@
 *
 */
 
+
+/*
+* TO DO
+* Create a new carousel method for the gallery section
+*/
+
+
 class Helper {
 
         /**
@@ -97,11 +104,11 @@ class Helper {
                                 <div class="item active">
                                         '. self::image_tag($value->filename,'rounded').'
                                         <div class="carousel-caption">
-                                        '.$value->title.'
+                                        '.$value->title.' <br/> <a class="btn btn-primary" href="#">see more </a>
                                         </div>
                                 </div>';
                            } else {
-                                    echo '<div class="item">'. self::image_tag($value->filename,'rounded').'<div class="carousel-caption">'.$value->title.'</div></div>';
+                                    echo '<div class="item">'. self::image_tag($value->filename,'rounded').'<div class="carousel-caption">'.$value->title.'<br/> <a class="btn btn-primary" href="#">see more </a></div></div>';
                         }
                 }
 
@@ -110,6 +117,7 @@ class Helper {
                 echo '</div>';
 
         }
+
 
         /**
          * Pointless function for the carrousel

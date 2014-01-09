@@ -16,6 +16,8 @@ Admin:
 </pre>
 
 <h4>TODO list</h4>
+  * Gallery Section
+     * -[ ] Add a column for links on the gallery sections table
   * Core application
     * Routes
       * - [ ] Parse the url and remove slashes
