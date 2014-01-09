@@ -16,8 +16,8 @@ class Helper {
 
         /**
          * Get the list of the dogs for the menu
-*
-*/
+	*
+	*/
         public function get_dogs_list() {
                 // Only get the id and the name
                 $dogs = Dog::find('all', array('select' => 'id, name'));
@@ -27,8 +27,8 @@ class Helper {
 
         /**
          * Call if not found
-*
-*/
+	*
+	*/
         public function not_found($info) {
                 $error = Errors::create(array(
                         'level'        => '1',
@@ -68,8 +68,8 @@ class Helper {
 
         /**
          * Back link
-*
-*/
+	*
+	*/
         public function back_link($class, $name) {
                 $host = $_SERVER['HTTP_HOST'];
 
@@ -131,12 +131,20 @@ class Helper {
         }
 
         public static function accordion($id,$title,$info) {
-                #TO DO change the button
+		$images = Matingpuppyimage::first(array('matingpuppy_id' => $id));
+
+		if (isset($images)) { 
+			echo '<a href="#" data-toggle="modal" data-target="#myModal'.$id.'">';
+			echo '<img src="'.$images->filename.'" height="100" "/ >';
+			echo '</a>';
+		} else {
                 echo '
                 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal'.$id.'" style="margin: 15px;">
                         '.$title.'
-                </button>
+                </button>';
+		}
 
+		echo '
                 <div class="modal fade" id="myModal'.$id.'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                                 <div class="modal-content">

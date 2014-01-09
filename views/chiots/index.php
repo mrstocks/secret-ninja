@@ -14,7 +14,7 @@ foreach($matings as $id => $mating) {
 	echo '<div class="panel-group" id="accordion">';
 	// Get the puppies from that mating
 	foreach($mating->matingpuppies as $id => $puppy) {
-		$helper::accordion($id, $puppy->name, $puppy->information);
+		$helper::accordion($puppy->id, $puppy->name, $puppy->information);
 	}
 	echo '</div>';
 
