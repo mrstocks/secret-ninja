@@ -16,7 +16,7 @@
           </ul> <!-- /Sub menu -->
         </li>
         <li class="<?php if ($routes->controller == 'chiots') { echo 'active'; } ?>"><a href="/index.php/chiots">Les touts petits</a></li>
-        <li class="<?php if ($routes->controller == 'installation') { echo 'active'; } ?>"><a href="/index.php/installation">Installation</a></li>
+        <li class="<?php if ($routes->controller == 'gallery') { echo 'active'; } ?>"><a href="/index.php/gallery">Gallery</a></li>
         <li class="<?php if ($routes->controller == 'contact') { echo 'active'; } ?>"><a href="/index.php/contact">Contactez nous</a></li>
       </ul>
     </div><!--/.nav -->

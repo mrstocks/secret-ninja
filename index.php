@@ -25,7 +25,6 @@ require_once __DIR__ . "/models/init.php";
  */
 require_once __DIR__ . "/routes/routes.php";
 
-
 /**
  * Get the helper
  *

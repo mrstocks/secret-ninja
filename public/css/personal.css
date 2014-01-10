@@ -12,7 +12,6 @@
 	height: 340px;
 	width:90%;
 	margin:0 auto;
-	border: 1px solid red;
 	margin-bottom: 10px;
 }
 
@@ -39,4 +38,45 @@
 .border-right {
 	border-right: 1px solid #CCC;
 	margin-right: 20px;
+}
+
+.float-left {
+	float:left;
+}
+
+.gallery-tile{
+	display: block;
+	float:left;
+	width:100%;
+	margin-bottom:10px;
+}
+
+.gallery-tile-ln,
+.gallery-tile-lg {
+	display: block;
+	float:left;
+	width:100%;
+	margin-bottom:10px;
+}
+
+.gallery-tile-ln .carousel-inner > .item > img,
+.gallery-tile-ln .carousel-inner > .item > a > img{
+	height: 400px;
+}
+.gallery-tile-lg .carousel-inner > .item > img,
+.gallery-tile-lg .carousel-inner > .item > a > img{
+	height: 600px;
+}
+
+ .gallery-tile .carousel-inner > .item > img,
+ .gallery-tile .carousel-inner > .item > a > img{
+ 	height:300px;
+ }
+
+.gallery .col-md-8,
+.gallery .col-md-6,
+.gallery .col-md-12
+{
+	margin:0px;
+	padding-right:0;
 }
