@@ -4,15 +4,13 @@
 * the controller
 *
 */
-=
-
 
 class Helper {
 
         /**
-         * Get the list of the dogs for the menu
-*
-*/
+          * Get the list of the dogs for the menu
+          *
+        */
         public function get_dogs_list() {
                 // Only get the id and the name
                 $dogs = Dog::find('all', array('select' => 'id, name'));
