@@ -1,23 +1,18 @@
 <?php
 /****
-* This class just saves typing too much and take the legic of the view out of
+* This class just saves typing too much and take the logic of the view out of
 * the controller
 *
 */
-
-
-/*
-* TO DO
-* Create a new carousel method for the gallery section
-*/
+=
 
 
 class Helper {
 
         /**
          * Get the list of the dogs for the menu
-	*
-	*/
+*
+*/
         public function get_dogs_list() {
                 // Only get the id and the name
                 $dogs = Dog::find('all', array('select' => 'id, name'));
@@ -27,8 +22,8 @@ class Helper {
 
         /**
          * Call if not found
-	*
-	*/
+*
+*/
         public function not_found($info) {
                 $error = Errors::create(array(
                         'level'        => '1',
@@ -68,8 +63,8 @@ class Helper {
 
         /**
          * Back link
-	*
-	*/
+*
+*/
         public function back_link($class, $name) {
                 $host = $_SERVER['HTTP_HOST'];
 
@@ -104,11 +99,11 @@ class Helper {
                                 <div class="item active">
                                         '. self::image_tag($value->filename,'rounded').'
                                         <div class="carousel-caption">
-                                        '.$value->title.' <br/> <a class="btn btn-primary" href="#">see more </a>
+                                        '.$value->title.'
                                         </div>
                                 </div>';
                            } else {
-                                    echo '<div class="item">'. self::image_tag($value->filename,'rounded').'<div class="carousel-caption">'.$value->title.'<br/> <a class="btn btn-primary" href="#">see more </a></div></div>';
+                                    echo '<div class="item">'. self::image_tag($value->filename,'rounded').'<div class="carousel-caption">'.$value->title.' </div></div>';
                         }
                 }
 
@@ -131,20 +126,12 @@ class Helper {
         }
 
         public static function accordion($id,$title,$info) {
-		$images = Matingpuppyimage::first(array('matingpuppy_id' => $id));
-
-		if (isset($images)) { 
-			echo '<a href="#" data-toggle="modal" data-target="#myModal'.$id.'">';
-			echo '<img src="'.$images->filename.'" height="100" "/ >';
-			echo '</a>';
-		} else {
+                #TO DO change the button
                 echo '
                 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal'.$id.'" style="margin: 15px;">
                         '.$title.'
-                </button>';
-		}
+                </button>
 
-		echo '
                 <div class="modal fade" id="myModal'.$id.'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                                 <div class="modal-content">
@@ -163,6 +150,39 @@ class Helper {
                         </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
                 ';
+        }
+
+        public function gallery_tile($data_object)
+        {
+                // This for loop is just for a simulation
+               for ($x = 0; $x< 7; $x++)
+               {
+
+                  foreach ($data_object as $id => $value)
+                  {
+
+                    if( ($id + rand()) % 9== 0)
+                    {
+                        echo ' <div class="gallery-tile lg col-md-8">';
+                    }
+                    else
+                    {
+                        if($id % 2 == 0)
+                        {
+                            echo '<div class="gallery-tile ln col-md-4">';
+                        }
+
+                        else
+                        {
+                            echo '<div class="gallery-tile col-md-4">';
+                        }
+                    }
+                    echo '<div class="tile-item">';
+                    echo '<img src="',$value->filename. '"/>';
+                    echo '<div class="tile-caption"><p>'.$value->title.'</p></div>';
+                    echo '</div></div>';
+                }
+            }
         }
 }
 $helper = New Helper();
