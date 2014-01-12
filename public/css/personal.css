@@ -7,7 +7,9 @@
 	margin-right: 15px;
 }
 
+/* To be changed */
 .gmap{
+	border:1px solid green;
 	height: 340px;
 	width:90%;
 	margin:0 auto;
@@ -49,32 +51,137 @@
 */
 
 .gallery-tile{
+	text-align:center;
 	display: block;
 	float:left;
-	height:450px;
-	padding:5px;
+	height:310px;
+	padding:10px;
 }
 
-.gallery-tile.lg,
+
 .gallery-tile.ln{
+	height:350px;
+}
+
+.gallery-tile.lg{
 	height:600px;
 }
 
 .tile-item{
+	border-radius:10px;
 	height:100%;
-	border:solid red 2px;
+	border:solid grey 2px;
 }
 
-.gallery-tile img{
-	height:90%;
+.icon-pushpin:before{content:"\f08d"}
+
+.gallery-tile 	img{
+	height:100%;
 	width:100%;
-	border:solid blue 2px;
+	border-radius: 8px;
 }
 
-.gallery-tile{
-	text-align:center;
+.tag-top {
+  background-color: #de3d3d;
+  width: 27px;
+  height: 20px;
+  border-radius: 20px;
+  position: relative;
+  top: -40px;
+  left: 34px;
+  border-top: 1px solid #A50A56;
 }
-.tile-caption{
-	height:10%;
-	border:1px solid green;
+
+.tag-bottom {
+  width: 95px;
+  height: 30px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  border: 1px solid #A50A56;
+  box-shadow: 1px 1px 5px #547;
+  background: #ec2290; /* Old browsers */
+  background: -moz-linear-gradient(top, #ec2290 39%, #cc287a 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(39%,#ec2290), color-stop(100%,#cc287a)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ec2290 39%,#cc287a 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ec2290 39%,#cc287a 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ec2290 39%,#cc287a 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #de3d3d 39%,#de3d3d 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec2290', endColorstr='#cc287a',GradientType=0 ); /* IE6-9 */
+ transform: rotate(3deg);
+}
+
+.tag-text {
+  color:#ffffff;
+  font-style: bold;
+  position: relative;
+  text-align: center;
+  padding-top:3px;
+	font-size:15px;
+}
+
+.box-tag{
+  position:absolute;
+  margin-bottom: -16px;
+  font-size: 14px;	
+  position:relative;
+  display: block;
+  float:right;
+  left: -3px;
+  top:30px;
+}
+
+.tile-caption p{
+	line-height: 14px;
+	width: 70%;
+	float:left;
+	font-size:smaller;
+}
+
+
+.glyphicon-ok-sign{
+	color:#eeeb23;
+}
+
+
+.tile-caption,
+.tile-item figcaption{
+	max-height: 50px;
+	color:white;
+	background: rgba(0, 0, 0, 0.5);
+	position: relative;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	padding-top:10px;
+	height:50px;
+	width:100%;
+	top:-50px;
+}
+
+.tile-item:hover 
+{
+	border: solid 3px pink;
+	color:blue;
+}
+
+.tile-item figcaption
+{
+	max-height:50px;
+	display:none;
+}
+
+.tile-item:hover .tile-caption
+{
+	display:none;
+}
+
+.tile-item:hover figcaption{
+	display:block;
+}
+
+figcaption .btn-info
+{
+	padding:1px;
+	height:30px;
 }
