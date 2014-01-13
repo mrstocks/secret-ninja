@@ -180,7 +180,7 @@ class Helper {
 
                     // IF dog is available for sale
                     if ($value->available)
-                    {
+                    { // WTF localhost? TODO
                         echo '<figcaption><p>
                                     <a class="btn btn-info" href="http://localhost:3333/index.php/chiens/show/'. $value->dog_id.'">More Information
                                     </a></p>

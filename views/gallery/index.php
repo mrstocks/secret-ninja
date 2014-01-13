@@ -13,7 +13,7 @@
 		<div class="gallery" >
 			<div class="col-md-12">
 				<div class="js-masonry"  data-masonry-options='{ "columnWidth": 10, "itemSelector": ".gallery-tile" }'>
-				  	<?php  Helper::gallery_tile($gallerysections); ?>
+				  	<?php  Helper::gallery_tile($galleries); ?>
 				  	</div>
 				</div>
 			</div>

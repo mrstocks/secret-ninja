@@ -5,6 +5,7 @@
  * 
  */
 
-$gallerysections = Gallerysection::all();
+$galleries = Gallery::all();
+
 
 ?>

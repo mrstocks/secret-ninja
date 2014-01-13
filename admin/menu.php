@@ -1,6 +1,6 @@
 <ul class="nav nav-list">
 	<li class="active">
-		<a href="index.html">
+		<a href="index.php">
 			<i class="icon-dashboard"></i>
 			<span class="menu-text"> Dashboard </span>
 		</a>
@@ -16,16 +16,16 @@
 	<li>
 		<a href="#" class="dropdown-toggle">
 			<i class="icon-desktop"></i>
-			<span class="menu-text"> UI Elements </span>
+			<span class="menu-text"> Galleries </span>
 
 			<b class="arrow icon-angle-down"></b>
 		</a>
 
 		<ul class="submenu">
 			<li>
-				<a href="elements.html">
+				<a href="dropzone.php">
 					<i class="icon-double-angle-right"></i>
-					Elements
+					Uploads Files
 				</a>
 			</li>
 
@@ -158,9 +158,9 @@
 			</li>
 
 			<li>
-				<a href="dropzone.html">
+				<a href="dropzone.php">
 					<i class="icon-double-angle-right"></i>
-					Dropzone File Upload
+					Gallery File Upload
 				</a>
 			</li>
 		</ul>
