@@ -4,7 +4,7 @@
 	- create a fade out css effect
    */
 ?>
-
+	<div class="container">
 	<script src="/public/js/masonry.pkgd.min.js"></script>
 	<div class="row">
 	<h3>Welcome to our Gallery</h3>
@@ -18,3 +18,4 @@
 				</div>
 			</div>
 		</div>
+	</div>
