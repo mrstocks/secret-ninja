@@ -152,57 +152,53 @@ class Helper {
 
         public static function gallery_tile($data_object)
         {
-                // This for loop is just for a simulation
-               for ($x = 0; $x< 13; $x++)
-               {
+              foreach ($data_object as $id => $value)
+              {
 
-                  foreach ($data_object as $id => $value)
-                  {
-
-                    if( ($id + rand()) % 9== 0)
+                if( ($id + rand()) % 9== 0)
+                {
+                    echo ' <div class="gallery-tile lg col-md-8">';
+                }
+                else
+                {
+                    if($id % 2 == 0)
                     {
-                        echo ' <div class="gallery-tile lg col-md-8">';
+                        echo '<div class="gallery-tile ln col-md-4">';
                     }
+
                     else
                     {
-                        if($id % 2 == 0)
-                        {
-                            echo '<div class="gallery-tile ln col-md-4">';
-                        }
-
-                        else
-                        {
-                            echo '<div class="gallery-tile col-md-4">';
-                        }
+                        echo '<div class="gallery-tile col-md-4">';
                     }
-                    echo '<div class="tile-item">';
-                    echo '<img src="',$value->filename. '"/>';
-
-                    // IF dog is available for sale
-                    if ($value->available)
-                    {
-                        echo '<figcaption><p>
-                                    <a class="btn btn-info" href="http://localhost:3333/index.php/chiens/show/'. $value->dog_id.'">More Information
-                                    </a></p>
-                            </figcaption>';
-                    }
-                    echo '<div class="tile-caption"><p>'.$value->title.'</p>
-                            <div class="box-tag rotate-left ">
-                              <div class="tag-bottom">
-                                <div class="tag-text">';
-
-                    if($value->available)
-                    {
-                        echo '<span class="glyphicon glyphicon-ok-sign"></span>Disponible';        
-                    }
-                    else 
-                    {
-                        echo '<span class="glyphicon glyphicon-remove-sign"></span>Vendu';
-                    }
-
-                    echo '</div></div><div class="tag-top"></div></div></div></div></div>';
                 }
+                echo '<div class="tile-item">';
+                echo '<img src="',$value->filename. '"/>';
+
+                // IF dog is available for sale
+                if ($value->available)
+                {
+                    echo '<figcaption><p>
+                                <a class="btn btn-info" href="/index.php/chiens/show/'. $value->dog_id.'">More Information
+                                </a></p>
+                        </figcaption>';
+                }
+                echo '<div class="tile-caption"><p>'.$value->title.'</p>
+                        <div class="box-tag rotate-left ">
+                          <div class="tag-bottom">
+                            <div class="tag-text">';
+
+                if($value->available)
+                {
+                    echo '<span class="glyphicon glyphicon-ok-sign"></span>Disponible';        
+                }
+                else 
+                {
+                    echo '<span class="glyphicon glyphicon-remove-sign"></span>Vendu';
+                }
+
+                echo '</div></div><div class="tag-top"></div></div></div></div></div>';
             }
+    
         }
 }
 
