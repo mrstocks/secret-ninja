@@ -161,7 +161,7 @@
 
 .tile-item:hover 
 {
-	border: solid 3px  #de3d3E;
+	border: solid 3px pink;
 	color:blue;
 }
 
