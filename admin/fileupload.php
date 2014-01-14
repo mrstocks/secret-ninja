@@ -17,5 +17,7 @@ if (!empty($_FILES)) {
 	$gallery->filename = "/public/images/galleries/".$_FILES['file']['name'];	
 	$gallery->save();
 
+	echo "Saved";
+
 }
 ?>     

@@ -429,6 +429,7 @@
 										<div class="fallback">
 											<input name="file" type="file" multiple="" />
 										</div>
+										<button type="submit" class="btn btn-info">Submit</button>
 									</form>
 								</div><!-- PAGE CONTENT ENDS -->
 							</div><!-- /.col -->
