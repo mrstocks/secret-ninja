@@ -153,9 +153,6 @@ class Helper {
         public static function gallery_tile($data_object)
         {
                 // This for loop is just for a simulation
-               for ($x = 0; $x< 13; $x++)
-               {
-
                   foreach ($data_object as $id => $value)
                   {
 
@@ -202,7 +199,6 @@ class Helper {
 
                     echo '</div></div><div class="tag-top"></div></div></div></div></div>';
                 }
-            }
         }
 }
 

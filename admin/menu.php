@@ -13,7 +13,7 @@
 		</a>
 	</li>
 
-	<li>
+	<li class="active open">
 		<a href="#" class="dropdown-toggle">
 			<i class="icon-desktop"></i>
 			<span class="menu-text"> Galleries </span>
@@ -28,6 +28,13 @@
 					Uploads Files
 				</a>
 			</li>
+			<li>
+				<a href="galleryadmin.php">
+					<i class="icon-double-angle-right"></i>
+					Gallery Admin
+				</a>
+			</li>
+
 
 			<li>
 				<a href="buttons.html">
