@@ -61,8 +61,8 @@ class Helper {
 
         /**
          * Back link
-*
-*/
+         *
+        */
         public static  function back_link($class, $name) {
                 $host = $_SERVER['HTTP_HOST'];
 
@@ -151,6 +151,11 @@ class Helper {
         }
 
 
+        /**
+         * Shuffles an associative array
+         * @param  reference to the array to  be shuffled
+         * @return  true if the array has been shuffled
+         */
         public static function shuffle_array(&$array) 
         {
            $keys = array_keys($array);
