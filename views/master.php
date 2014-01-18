@@ -20,8 +20,6 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-	
 	<?php
 		/**
 		 * A nice menu

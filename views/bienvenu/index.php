@@ -1,3 +1,12 @@
+   <section class="page-header" id="content">
+        <div class="container">
+          <h2>Bienvenu </h2>
+          <p>Nous sommes petit elevage de doggues allemand dans la Mayenne.</p>
+        </div>
+  </section>
+  <!-- Container for the remaining of the page -->
+  <div class="container">
+
         <div class="row" style="">
             <div class="col-md-5">
                 <?php require __DIR__ . "/../shared/stickynews.php"; ?>
@@ -10,36 +19,39 @@
             </div>
         </div>
 
-
         <hr style="" />
-        <div class="row">
-		<h3>Nouveautés</h3>
-            <div class="col-md-12">
+          <!--  -This is just for testing 
+             -It will be implemented in PHP
+           -->
 
+        <div class="row new-dogs">
+				<h3>Nouveau dans la maison</h3>
+            <div class="col-md-12">
                 <article class="col-md-4 featured-post">
-			  <div class="post-image">
-                    <h5>Finouka</h5> 
+                    <div class="post-image">
                     <img src="/public/images/8176795608_dd03519ded_c.jpg" alt="desc" style="width:100%" />
                     </div>
                     <div clas="post-caption">
+                    <h5>Finouka</h5> 
                         <p>Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus.</p>
                     </div>
                 </article>
                 <article class="col-md-4 featured-post">
 			  <div class="post-image">
-                    <h5>Finouka</h5> 
+                    
                     <img src="/public/images/8176795608_dd03519ded_c.jpg" alt="desc" style="width:100%" />
                     </div>
                     <div clas="post-caption">
+                        <h5>Finouka</h5> 
                         <p>Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus.</p>
                     </div>
                 </article>
                 <article class="col-md-4 featured-post">
 			  <div class="post-image">
-                    <h5>Finouka</h5> 
                     <img src="/public/images/8176795608_dd03519ded_c.jpg" alt="desc" style="width:100%" />
                     </div>
                     <div clas="post-caption">
+                    <h5>Finouka</h5> 
                         <p>Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus.</p>
                     </div>
                 </article>
