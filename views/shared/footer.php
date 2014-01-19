@@ -1,3 +1,4 @@
+<div class="container">
      <div class="row demo-tiles" style="padding-top: 50px;">
         <div class="col-md-3">
           <div class="tile">
@@ -37,7 +38,7 @@
 
         </div>
       </div> <!-- /tiles --> 
-
+</div>
 
 
 

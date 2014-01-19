@@ -168,8 +168,9 @@ figcaption .btn-info {
 }
 
 .navbar{
-    margin:0;
-    border-radius: 0;
+  margin:0;
+  border-radius: 0;
+  border-bottom:2px solid rgb(240, 230, 242);
 }
 
 .page-header {
@@ -181,8 +182,8 @@ margin-bottom: 20px;
 }
 
 .page-header p {
-    font-family: Lato, Helvetica, Arial, sans-serif;
-line-height: 1.5;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
 }
 .page-header h2{
     margin:0;
@@ -199,7 +200,7 @@ line-height: 1.5;
 }
 
 .navbar-inverse .nav > li > a{
-    padding:17px 15px;
+    padding:17px 17px;
 }
 
 #header { 
@@ -208,6 +209,10 @@ line-height: 1.5;
 }
 
 h2 {
+  color: #c3a26f;
+}
+
+h3 {
   color: #c3a26f;
 }
 
@@ -221,4 +226,16 @@ ul {
 
 .intro { 
   color: #c3a26F; 
+}
+
+.news {
+  text-decoration: underline;
+}
+
+div.hr {
+  height: 15px;
+  background: #fff url(/public/images/hr.png) no-repeat scroll center;
+}
+div.hr hr {
+  display: none;
 }
