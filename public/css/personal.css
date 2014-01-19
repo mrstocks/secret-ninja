@@ -201,3 +201,24 @@ line-height: 1.5;
 .navbar-inverse .nav > li > a{
     padding:17px 15px;
 }
+
+#header { 
+  height: 20px;
+  background-image:url('/public/images/long-art.jpg'); 
+}
+
+h2 {
+  color: #c3a26f;
+}
+
+h6 {
+  color: #34495e;
+}
+
+ul {
+  list-style-image:url('/public/images/list-bullets.png');
+}
+
+.intro { 
+  color: #c3a26F; 
+}

@@ -1,7 +1,7 @@
    <section class="page-header" id="content">
         <div class="container">
-          <h2>Bienvenu </h2>
-          <p>Nous sommes petit elevage de doggues allemand dans la Mayenne.</p>
+          <h2>Bienvenue </h2>
+          <p class="intro">Nous sommes un petit elevage de doggues allemand dans la Mayenne. <small>(<a href="/index.php/contact">voire la carte</a>)</small></p>
         </div>
   </section>
   <!-- Container for the remaining of the page -->
