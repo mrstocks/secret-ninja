@@ -95,13 +95,13 @@ class Helper {
                         if ($id == 0) {
                                 echo '
                                 <div class="item active">
-                                        '. self::image_tag($value->filename,'rounded').'
+                                        '. self::image_tag($value->filename,'').'
                                         <div class="carousel-caption">
                                         '.$value->title.'
                                         </div>
                                 </div>';
                            } else {
-                                    echo '<div class="item">'. self::image_tag($value->filename,'rounded').'<div class="carousel-caption">'.$value->title.' </div></div>';
+                                    echo '<div class="item">'. self::image_tag($value->filename,'').'<div class="carousel-caption">'.$value->title.' </div></div>';
                         }
                 }
 
