@@ -19,6 +19,9 @@ if (!isset($_SESSION['logged_in']))  {
 
 $title = "Celestia Admin";
 $subtitle = "Gallery admin";
+
+require_once __DIR__ ."/helpers/helper.php";
+
 ?>
 
 
@@ -181,7 +184,8 @@ $subtitle = "Gallery admin";
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<form class="form-horizontal" role="form" action="updategallery.php">
-								<?php 
+								<?php
+									$puppies = helper::get_puppy_list(); 
 									$galleries = Gallery::all();
 
 									foreach ($galleries as $gallery) {
@@ -206,7 +210,6 @@ $subtitle = "Gallery admin";
 											<input type="text" id="form-field-1" placeholder="Username" class="col-xs-10 col-sm-5" />
 										</div>
 									</div>
-
 									<div class="space-4"></div>
 
 									<div class="form-group">
@@ -230,6 +233,39 @@ $subtitle = "Gallery admin";
 																<option value="1">Reste a l'elevage</option>
 																<option value="2">Disponnible</option>
 															</select>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="space-4"></div>
+
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> </label>
+
+										<div class="col-sm-4">
+
+											<div class="widget-box">
+												<div class="widget-header">
+													<h4>Puppy</h4>
+
+												</div>
+
+												<div class="widget-body">
+													<div class="widget-main">
+														<div>
+
+															<select class="form-control" id="form-field-select-1">
+																<option value="">&nbsp;</option>
+																<?php
+																	foreach ($puppies as $puppy) { 
+																		echo "<option value='".$puppy->id."'>" .$puppy->name. "</option>";
+																	}
+																?>
+															</select>
+
 														</div>
 
 													</div>

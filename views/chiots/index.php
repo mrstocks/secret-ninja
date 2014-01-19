@@ -1,4 +1,4 @@
-
+<div class="container">
 <div class="row" style="">
 	<div class="col-md-8 border-right">
  
@@ -39,4 +39,5 @@ foreach($matings as $id => $mating) {
 		<a href="/index.php/contact">Plus de photo? De l'aide?</a><br />
 		</p>
 	</div>
+</div>
 </div>
