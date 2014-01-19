@@ -5,9 +5,9 @@
     float: left;
     margin-right: 15px;
 }
-/* To be changed */
+
  .gmap {
-    border:1px solid green;
+    border:1px solid  #16a085;
     height: 340px;
     width:90%;
     margin:0 auto;
@@ -57,9 +57,7 @@
     height:100%;
     border:solid grey 2px;
 }
-.icon-pushpin:before {
-    content:"\f08d"
-}
+
 .gallery-tile img {
     height:100%;
     width:100%;
@@ -142,8 +140,7 @@
     top:-50px;
 }
 .tile-item:hover {
-    border: solid 3px pink;
-    color:blue;
+    border: solid 3px #de3d3d;
 }
 .tile-item figcaption {
     max-height:50px;
