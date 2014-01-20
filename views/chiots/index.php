@@ -7,18 +7,21 @@
 // I don't know what i doing so i will just follow the flow
 foreach($matings as $id => $mating) {
 	
+  echo'
+    <section class="page-header" id="content">
+        <div class="container">';
 	// Get the information from the mating
-	echo "<h3>". $mating->title."</h3>";
-	echo "<p>" . $mating->information. "</p>";
-
+	echo "<h2>". $mating->title."</h2>";
+	echo "<p><small>" . $mating->information. "</small></p>";
+        echo '</div>';
+   	echo '</section>';
 	echo '<div class="panel-group" id="accordion">';
 	// Get the puppies from that mating
 	foreach($mating->matingpuppies as $id => $puppy) {
 		$helper::puppylist($puppy->id, $puppy->name, $puppy->information);
 	}
 	echo '</div>';
-
-	echo "<div class='hr'><hr /></div>";
+	echo "<br />";
 }
 ?>
 	</div>
@@ -39,7 +42,6 @@ foreach($matings as $id => $mating) {
 		<a href="/index.php/contact">Plus de photo? De l'aide?</a><br />
 
 
-		<a href="img/image-1.jpg" data-lightbox="image-1" title="My caption">image #1</a>
 		</p>
 	</div>
 </div>

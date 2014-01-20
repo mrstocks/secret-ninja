@@ -164,6 +164,8 @@ class Helper {
 
 						}
 						echo '
+						<div class="hr"><hr /></div>
+						<small>Plus de photo? <a href="/index.php/contact">contactez-moi</a></small>
                                         </div>
                                         <div class="modal-footer">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
@@ -216,7 +218,7 @@ class Helper {
                   }
               }
               echo '<div class="tile-item">';
-              echo '<img src="',$value->filename. '"/>';
+              echo '<a href="'.$value->filename.'" data-lightbox="image-1" title="'.$value->title.'"><img src="',$value->filename. '"/></a>';
 
               // IF dog is available for sale
               if ($value->available)
