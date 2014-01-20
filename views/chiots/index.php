@@ -24,7 +24,7 @@ foreach($matings as $id => $mating) {
 	</div>
 	<div class="col-mb-4" style="margin-left: 15px;">
 		<h3>Comment?</h3>	
-		<p>Nous sommes un tout petit élevage de dogues allemans, nous produisons des parfait chiots 
+		<p>Nous sommes un tout petit élevage de dogues allemans, nous produisons des parfait chiots
 		arlequins, noirs et bleus LOF. <br />
 		<b>Il vous suffit de cliquez sur un boutton</b> a gauche pour avoir des photos est une description.</br />
 		La pluspart des chiots sont destiné a l'expo ou au sein d'unegentil famille.<br />
@@ -37,6 +37,9 @@ foreach($matings as $id => $mating) {
 		}	
 		?>
 		<a href="/index.php/contact">Plus de photo? De l'aide?</a><br />
+
+
+		<a href="img/image-1.jpg" data-lightbox="image-1" title="My caption">image #1</a>
 		</p>
 	</div>
 </div>

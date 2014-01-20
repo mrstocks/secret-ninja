@@ -11,6 +11,7 @@
     <!-- Loading Flat UI -->
     <link href="/public/css/flat-ui.css" rel="stylesheet">
     <link href="/public/css/personal.css" rel="stylesheet">
+    <link href="/public/css/lightbox.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="/public/images/favicon.ico">
 
@@ -67,7 +68,7 @@
     <script src="/public/js/jquery.placeholder.js"></script>
     <script src="/public/js/jquery.stacktable.js"></script>
     <script src="http://vjs.zencdn.net/4.1/video.js"></script>
+    <script src="/public/js/lightbox-2.6.min.js"></script>
     <script src="/public/js/application.js"></script>
-  </div>
   </body>
 </html>

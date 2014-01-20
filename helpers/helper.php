@@ -153,7 +153,17 @@ class Helper {
                                         </div>
                                         <div class="modal-body">
                                                 '.$info.'
-                                                <hr />
+                                                <div class="hr"><hr /></div>
+						<h6>Clickez dessus pour voir en grand</h6>
+						';
+						$options = array("matingpuppy_id" => $id);
+                				$pictures = Matingpuppyimage::all($options);
+						foreach ($pictures as $picture) {
+
+						echo '<a href="'.$picture->filename.'" data-lightbox="image-1" title="'.$title.'"><img src="'.$picture->filename.'" class="rounded" height="75" /></a>';
+
+						}
+						echo '
                                         </div>
                                         <div class="modal-footer">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
