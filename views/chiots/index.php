@@ -14,11 +14,11 @@ foreach($matings as $id => $mating) {
 	echo '<div class="panel-group" id="accordion">';
 	// Get the puppies from that mating
 	foreach($mating->matingpuppies as $id => $puppy) {
-		$helper::accordion($puppy->id, $puppy->name, $puppy->information);
+		$helper::puppylist($puppy->id, $puppy->name, $puppy->information);
 	}
 	echo '</div>';
 
-	echo "<hr />";
+	echo "<div class='hr'><hr /></div>";
 }
 ?>
 	</div>
@@ -26,7 +26,7 @@ foreach($matings as $id => $mating) {
 		<h3>Comment?</h3>	
 		<p>Nous sommes un tout petit élevage de dogues allemans, nous produisons des parfait chiots 
 		arlequins, noirs et bleus LOF. <br />
-		Il vous suffit de cliquez sur un boutton a gauche pour avoir des photos est une description.</br />
+		<b>Il vous suffit de cliquez sur un boutton</b> a gauche pour avoir des photos est une description.</br />
 		La pluspart des chiots sont destiné a l'expo ou au sein d'unegentil famille.<br />
 		<br />
 		Vous pouvez aussi consulter : <br />
