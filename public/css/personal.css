@@ -5,9 +5,9 @@
     float: left;
     margin-right: 15px;
 }
-/* To be changed */
+
  .gmap {
-    border:1px solid green;
+    border:1px solid  #16a085;
     height: 340px;
     width:90%;
     margin:0 auto;
@@ -57,9 +57,7 @@
     height:100%;
     border:solid grey 2px;
 }
-.icon-pushpin:before {
-    content:"\f08d"
-}
+
 .gallery-tile img {
     height:100%;
     width:100%;
@@ -142,8 +140,7 @@
     top:-50px;
 }
 .tile-item:hover {
-    border: solid 3px pink;
-    color:blue;
+    border: solid 3px #de3d3d;
 }
 .tile-item figcaption {
     max-height:50px;
@@ -159,14 +156,6 @@ figcaption .btn-info {
     padding:1px;
     height:30px;
 }
-.featured-post{
-	text-align: center;
-}
-
-.featured-post img{
-	margin:10px;	
-}
-
 .navbar{
   margin:0;
   border-radius: 0;
@@ -188,10 +177,6 @@ margin-bottom: 20px;
 .page-header h2{
     margin:0;
     margin-top: 10px;
-}
-
-.new-dogs h3{
-    text-align: center;
 }
 
 .navbar-inverse  
@@ -238,4 +223,38 @@ div.hr {
 }
 div.hr hr {
   display: none;
+}
+
+.new-dogs 
+.featured-post
+.post-image{
+    height: 320px;
+}
+.new-dogs 
+.featured-post
+.post-image img{
+    height: 90%;   
+}
+
+.new-dogs{
+    text-align: center;
+}
+
+.featured-post h5{
+    color:#16a085;
+    font-family: Arial;
+    padding:0;
+    margin:0;
+}
+
+footer{
+    margin-top: 60px;
+    border:red 3px solid;
+    padding-bottom: 0px;
+    margin-bottom:0px;
+}
+
+footer .footer-banner{
+    height:100%;
+    min-height: 0px;
 }

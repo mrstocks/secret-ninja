@@ -17,8 +17,11 @@
                 <?php helper::carrousel($carrousel); ?>
             </div>
         </div>
+        </div>
 
-        <div class="hr"><hr /></div>
+<div class="hr"><hr /></div>
+ <div class="container">
+
           <!--  -This is just for testing 
              -It will be implemented in PHP
             WHAT SHOULD IT DO? FIXME
@@ -27,39 +30,13 @@
         <div class="row new-dogs">
 	  <h3>Nouveau dans la maison</h3>
             <div class="col-md-12">
-                <article class="col-md-4 featured-post">
-                    <div class="post-image">
-                    <img class="rounded" src="/public/images/8176795608_dd03519ded_c.jpg" alt="desc" style="width:100%" />
-                    </div>
-                    <div class="post-caption">
-                    <h5>Finouka</h5> 
-                        <p>Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus.</p>
-                    </div>
-                </article>
-                <article class="col-md-4 featured-post">
-			  <div class="post-image">
-                    
-                    <img class="rounded" src="/public/images/8176795608_dd03519ded_c.jpg" alt="desc" style="width:100%" />
-                    </div>
-                    <div class="post-caption">
-                        <h5>Finouka</h5> 
-                        <p>Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus.</p>
-                    </div>
-                </article>
-                <article class="col-md-4 featured-post">
-			  <div class="post-image">
-                    <img class="rounded" src="/public/images/8176795608_dd03519ded_c.jpg" alt="desc" style="width:100%" />
-                    </div>
-                    <div clas="post-caption">
-                    <h5>Finouka</h5> 
-                        <p>Vivamus tortor tellus, rutrum sit amet mollis vel, imperdiet consectetur orci. Mauris pharetra congue enim, et sagittis lectus congue ut. Cum sociis natoque penatibus.</p>
-                    </div>
-                </article>
-
+               <?php Helper::featured_posts($featured_posts) ?>
             </div>
         </div>
+        </div>
 
-        <div class="hr"><hr /></div>
+    <div class="hr"><hr /></div>
+        <div class="container">
         <div class="row">
             <div class="col-md-7" style="padding-top: 115px;">
                 <!--[if !IE]> -->
