@@ -245,6 +245,22 @@ class Helper {
               echo '</div></div><div class="tag-top"></div></div></div></div></div>';
             }
       }
+
+      public static function featured_posts($post_info)
+      {
+        foreach ($post_info as $id => $value)
+        {
+          echo  '<article class="col-md-4 featured-post">
+                  	<div class="post-image">
+                    		<img class="rounded" src="'.$value->filename.'" alt="desc" style="width:100%" />
+                    	</div>
+                    	<div clas="post-caption">
+	                    <h5>'.$value->name. '</h5>
+	                        <p>'.$value->caption.'</p>
+	                    </div>
+	             </article>';
+        }
+      }
 }
 
 $helper = New Helper();

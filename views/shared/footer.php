@@ -41,9 +41,9 @@
 </div>
 
 
-
+  </div>
    <footer style="">
-      <div class="container" style="margin-top: 60px;">
+      <div class="container">
         <div class="row">
           <div class="col-md-7">
             <h3 class="footer-title">Un peut sur moi.</h3>
@@ -59,7 +59,6 @@
 
           <div class="col-md-5">
             <div class="footer-banner">
-              
 	     <h3 class="footer-title">Derniere Nouvelles</h3>
                <?php  require __DIR__ . "/news.php" ?>
               <ul>
