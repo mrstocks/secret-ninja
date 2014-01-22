@@ -258,3 +258,13 @@ footer .footer-banner{
     height:100%;
     min-height: 0px;
 }
+
+.title-image{
+    height: 100px;
+    width:100px;
+}
+
+
+.tile{
+    background-color: rgba(0, 0, 0, .9)
+}
