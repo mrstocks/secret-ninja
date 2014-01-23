@@ -236,7 +236,8 @@ div.hr hr {
     max-width:330px;
     max-height: 287px;
     border-radius: 50%;
-    height: 90%;   
+    height: 90%;
+    border:3px solid #b51659;
 }
 
 .new-dogs{

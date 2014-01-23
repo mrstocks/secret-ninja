@@ -252,7 +252,7 @@ class Helper {
         {
           echo  '<article class="col-md-4 featured-post">
                   	<div class="post-image">
-                    		<img src="'.$value->filename.'" alt="desc"/>
+                    		'.self::image_tag($value->filename,'').'
                     	</div>
                     	<div clas="post-caption">
 	                    <h5>'.$value->name. '</h5>
