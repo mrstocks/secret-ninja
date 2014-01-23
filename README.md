@@ -52,3 +52,13 @@ Admin:
     * - [X] Fill in username and password for gmail account to be used
     * - [X] Add address and telephone number
     * - [X] Link to section with CV etc
+
+/* Frontend */
+-- update  Flat-UI
+-- add infinity scroll to gallery
+-- add pushpin
+-- correct front page video
+-- fix favicon and logo
+-- more front page design
+-- more pupies design
+-- correct UTF 8 error
