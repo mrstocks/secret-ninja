@@ -46,7 +46,14 @@ class Helper {
 
                 return "<img src='http://$host$filename' height='".$height."' width='".$width."' class='". $class ."' />";
         }
+	
+	public static function cdn_image($filename, $module, $id, $view, $class) {
+		return "<img src='http://cdn.elevage-fees-de-celestia.fr/uploads/$module/$view/$id/$filename' class='$class'/>";
+	}
 
+	public static function cdn_static($filename, $class) {
+		return "<img src='http://cdn.elevage-fees-de-celestia.fr/static/".$filename."' class='".$class."' />";
+	}
         /**
          * display an image with custom size
          * attibutes: $option array heigh, width, class
@@ -252,7 +259,7 @@ class Helper {
         {
           echo  '<article class="col-md-4 featured-post">
                   	<div class="post-image">
-                    		'.self::image_tag($value->filename,'').'
+                    		<img src="'.$value->filename.'" alt="desc"/>
                     	</div>
                     	<div clas="post-caption">
 	                    <h5>'.$value->name. '</h5>
