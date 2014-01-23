@@ -21,12 +21,6 @@
 
 <div class="hr"><hr /></div>
  <div class="container">
-
-          <!--  -This is just for testing 
-             -It will be implemented in PHP
-            WHAT SHOULD IT DO? FIXME
-            -->
-
         <div class="row new-dogs">
 	  <h3>Nouveau dans la maison</h3>
             <div class="col-md-12">
