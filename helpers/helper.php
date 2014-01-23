@@ -101,7 +101,7 @@ class Helper {
                                         </div>
                                 </div>';
                            } else {
-                                    echo '<div class="item">'. self::image_tag($value->filename,'').'<div class="carousel-caption">'.$value->title.' </div></div>';
+                                    echo '<div class="item">'.self::image_tag($value->filename,'').'<div class="carousel-caption">'.$value->title.' </div></div>';
                         }
                 }
 
@@ -252,7 +252,7 @@ class Helper {
         {
           echo  '<article class="col-md-4 featured-post">
                   	<div class="post-image">
-                    		<img class="rounded" src="'.$value->filename.'" alt="desc" style="width:100%" />
+                    		<img src="'.$value->filename.'" alt="desc"/>
                     	</div>
                     	<div clas="post-caption">
 	                    <h5>'.$value->name. '</h5>
