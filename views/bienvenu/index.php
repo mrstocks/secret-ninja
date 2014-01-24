@@ -5,7 +5,7 @@
         </div>
   </section>
   <!-- Container for the remaining of the page -->
-  <div class="container">
+  <div class="container news-item">
 
         <div class="row" style="">
             <div class="col-md-5">
@@ -17,19 +17,22 @@
                 <?php helper::carrousel($carrousel); ?>
             </div>
         </div>
-        </div>
+  </div>
 
 <div class="hr"><hr /></div>
+<div class="new-dogs">
  <div class="container">
-        <div class="row new-dogs">
+        <div class="row">
 	  <h3>Nouveau dans la maison</h3>
             <div class="col-md-12">
                <?php Helper::featured_posts($featured_posts) ?>
             </div>
         </div>
         </div>
+  </div>
 
     <div class="hr"><hr /></div>
+    <div class="front-page-video">
         <div class="container">
         <div class="row">
             <div class="col-md-7" style="padding-top: 115px;">
@@ -54,3 +57,5 @@
                 </p>
             </div>
         </div>
+        </div>
+    </div>

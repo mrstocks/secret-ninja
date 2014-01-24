@@ -218,8 +218,8 @@ ul {
 }
 
 div.hr {
-  height: 2px;
-  background: #fff url(/public/images/hr.png) repeat-y scroll center;
+  height: 15px;
+  background: #fff url(/public/images/hr.png) no-repeat scroll center;
 }
 div.hr hr {
   display: none;
@@ -229,15 +229,16 @@ div.hr hr {
 .featured-post
 .post-image{
     height: 320px;
+    background-color: grey;
 }
 .new-dogs 
 .featured-post
 .post-image img{
-    max-width:330px;
-    max-height: 287px;
-    border-radius: 50%;
-    height: 90%;
-    border:3px solid #b51659;
+    height: 90%;   
+}
+
+.new-dogs{
+    text-align: center;
 }
 
 .featured-post h5{
@@ -245,33 +246,4 @@ div.hr hr {
     font-family: Arial;
     padding:0;
     margin:0;
-}
-
-footer{
-    background-color: rgb(102, 102, 102);
-    margin-top: 60px;
-    border:red 3px solid;
-    padding-bottom: 0px;
-    margin-bottom:0px;
-}
-
-footer .footer-banner{
-    height:100%;
-    min-height: 0px;
-}
-
-.title-image{
-    height: 100px;
-    width:100px;
-}
-
-.new-dogs{
-    color:white;
-    background-color: #2c3e50;
-    background-size:cover;
-    text-align: center;
-}
-
-.news-item{
-    padding-bottom: 10px;
 }
