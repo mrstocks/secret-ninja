@@ -275,3 +275,14 @@ footer .footer-banner{
 .news-item{
     padding-bottom: 10px;
 }
+
+.front-page-video{
+    padding:0;
+    margin:0;
+    border:blue 3px solid;
+}
+
+.vjs-default-skin .vjs-big-play-button {
+    top:45%;
+    left: 50%;
+}

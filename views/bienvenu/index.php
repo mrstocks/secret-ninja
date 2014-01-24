@@ -31,27 +31,25 @@
         </div>
   </div>
 
+  <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+  <script>
+    videojs.options.flash.swf = "video-js.swf";
+  </script>
+
+
     <div class="hr"><hr /></div>
     <div class="front-page-video">
-        <div class="container">
-        <div class="row">
-            <div class="col-md-7" style="padding-top: 115px;">
-                <!--[if !IE]> -->
-                <video class="video-js" controls preload="auto" width="630" height="349" poster="/public/images/video/poster.jpg" data-setup="{}">
-                    <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4" type="video/mp4">
-                        <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm">
-                </video>
-                <!-- <![endif]-->
-
-                <!--[if IE]>
-                <video class="video-js" controls preload="auto" width="630" height="256" poster="http://video-js.zencoder.com/oceans-clip.jpg" data-setup="{}">
-                  <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4'/>
-                  <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'/>
-                </video>
-              <![endif]-->
+            <div class="col-md-12">
+					<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="100%" height="600" poster="http://video-js.zencoder.com/oceans-clip.png" data-setup="{}">
+						<source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+						<source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+						<source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+						<track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+						<track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+					</video>
 
             </div>
-            <div class="col-md-5">
+            <div class="video-text">
                 <h5>Elevage de Dogues Allemand!</h5>
                 <p>Bonjour ou bonne nuit a vous visiteurs sur le site Fees de Celestia, nous sommes de petit elevage de <span>dogue allemand</span> dans la compagne tres profonde a mayenne.
                 </p>
@@ -59,3 +57,4 @@
         </div>
         </div>
     </div>
+    <div class="hr"><hr /></div>

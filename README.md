@@ -54,7 +54,6 @@ Admin:
     * - [X] Link to section with CV etc
 
 /* Frontend */
--- update  Flat-UI
 -- add infinity scroll to gallery
 -- add pushpin
 -- correct front page video
@@ -62,3 +61,4 @@ Admin:
 -- more front page design
 -- more pupies design
 -- correct UTF 8 error
+-- correct navbar
