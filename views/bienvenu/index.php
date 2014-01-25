@@ -38,7 +38,8 @@
 
 
     <div class="hr"><hr /></div>
-    <div class="front-page-video">
+    <div class="container">
+       <div class="front-page-video">
             <div class="col-md-12">
 					<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="100%" height="600" poster="http://video-js.zencoder.com/oceans-clip.png" data-setup="{}">
 						<source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
@@ -56,5 +57,6 @@
             </div>
         </div>
         </div>
+     </div>
     </div>
     <div class="hr"><hr /></div>

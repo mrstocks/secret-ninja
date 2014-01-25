@@ -248,9 +248,9 @@ div.hr hr {
 }
 
 footer{
-    background-color: rgb(102, 102, 102);
+    background-color: rgb(242,242, 242);
     margin-top: 60px;
-    border:red 3px solid;
+    border-top:2px solid rgb(240, 230, 242);
     padding-bottom: 0px;
     margin-bottom:0px;
 }
@@ -279,7 +279,6 @@ footer .footer-banner{
 .front-page-video{
     padding:0;
     margin:0;
-    border:blue 3px solid;
 }
 
 .vjs-default-skin .vjs-big-play-button {
