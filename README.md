@@ -55,10 +55,7 @@ Admin:
 
 /* Frontend */
 -- add infinity scroll to gallery
--- add pushpin
 -- correct front page video
--- fix favicon and logo
 -- more front page design
 -- more pupies design
 -- correct UTF 8 error
--- correct navbar

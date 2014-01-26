@@ -6,18 +6,42 @@
     <a name="map"></a>
     <script type="text/javascript">
 
-      function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(48.491066, -0.449788),
-          zoom: 10
-        };	
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
+    	var laGuiltiere = new google.maps.LatLng(48.491066, -0.449788);
+		var marker;
+		var map;
+
+		function initialize() {
+		  var mapOptions = {
+		    zoom: 13,
+		    center: laGuiltiere
+		  };
+
+		  map = new google.maps.Map(document.getElementById('map-canvas'),
+		          mapOptions);
+
+		  marker = new google.maps.Marker({
+		    map:map,
+		    title:"Vous pouvez nous trouver ici",
+		    animation: google.maps.Animation.DROP,
+		    position: laGuiltiere
+		  });
+		  google.maps.event.addListener(marker, 'click', toggleBounce);
+		}
+
+		function toggleBounce() {
+
+		  if (marker.getAnimation() != null) {
+		    marker.setAnimation(null);
+		  } else {
+		    marker.setAnimation(google.maps.Animation.BOUNCE);
+		    setTimeout(toggleBounce, 4000);
+		  }
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 	
-	<section class="page-header" id="content">
+	<section class="jumbotron" id="content">
         <div class="container">
           	<h2>Contactez-nous</h2>
           	<p>S'il vous plaît nous localiser à l'aide de notre carte ci-dessous.<br/>

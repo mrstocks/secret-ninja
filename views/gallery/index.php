@@ -1,11 +1,11 @@
-   <section class="page-header" id="content">
+     <div class="jumbotron">
         <div class="container">
           <h2>Notre Galerie</h2>
           <p>Voici quelques-uns des grands points de vue que nous avons capturés sur le film (ou la mémoire numérique!)<br />
 			Cliquez sur un chien disponible pour en savoir plus.
 	</p>
         </div>
-  </section>
+  </div>
 
 <?php
 	/* To Do

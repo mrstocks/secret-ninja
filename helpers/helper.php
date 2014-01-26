@@ -82,7 +82,7 @@ class Helper {
          *
          */
         public static function carrousel($data_object) {
-                echo '<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">';
+                echo '<div id="carousel-example-generic" class="carousel slide rounded" data-ride="carousel">';
 
                 // Indicators
                 echo '<ol class="carousel-indicators">';
@@ -236,7 +236,7 @@ class Helper {
                       </figcaption>';
               }
               echo '<div class="tile-caption"><p>'.$value->title.'</p>
-                      <div class="box-tag rotate-left ">
+                      <div class="box-tag">
                         <div class="tag-bottom">
                           <div class="tag-text">';
 
@@ -249,7 +249,7 @@ class Helper {
               echo '<span class="glyphicon glyphicon-remove-sign"></span>Vendu';
               }
 
-              echo '</div></div><div class="tag-top"></div></div></div></div></div>';
+              echo '</div></div><div class="tag-top"> <span class="glyphicon glyphicon-pushpin"></span></div></div></div></div></div>';
             }
       }
 

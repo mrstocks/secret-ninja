@@ -1,6 +1,5 @@
 <div id="header"></div>  
-
-<div class="navbar navbar-inverse" role="navigation" role="banner">
+<nav class="navbar navbar-inverse" role="navigation" role="banner">
   <div class="container">
     <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -9,11 +8,15 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="/index.php">Fées De Celestia</a>
+      <div class="navbar-brand">
+        <img src="/public/images/logo.png" height="50" alt="Our Logo" /> <a href="/index.php">Fées De Celestia</a>
+      </div>
   </div>
-    <div class="navbar-collapse collapse"  id="bs-example-navbar-collapse-1">
+
+    <div class="navbar-collapse collapse navbar-collapse-01"  id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-left">
-        <li class="<?php if ($routes->controller == 'bienvenu') { echo 'active'; } ?>"><a href="/">Accueil</a></li>
+        <li class="<?php if ($routes->controller == 'bienvenu') { echo 'active'; } ?>"><a href="/">Accueil</a>
+        </li>
         <li class="<?php if ($routes->controller == 'chiens') { echo 'active'; } ?>"><a href="#">Les toutous<span class="navbar-unread">1</span></a>
           <ul>
             <?php 
@@ -30,4 +33,4 @@
       </ul>
     </div><!--/.nav -->
     </div>
-  </div>
+  </nav>
