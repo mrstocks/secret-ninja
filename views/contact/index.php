@@ -12,7 +12,7 @@
 
 		function initialize() {
 		  var mapOptions = {
-		    zoom: 13,
+		    zoom: 14,
 		    center: laGuiltiere
 		  };
 
@@ -34,7 +34,7 @@
 		    marker.setAnimation(null);
 		  } else {
 		    marker.setAnimation(google.maps.Animation.BOUNCE);
-		    setTimeout(toggleBounce, 4000);
+		    setTimeout(toggleBounce, 5000);
 		  }
 		}
 
