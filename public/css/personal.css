@@ -330,45 +330,17 @@ h6 {
    color: #344952;
 }
 
-.navbar-inverse {
-    padding:0;
-    margin:0;
-}
-.navbar-inverse .nav > li > a {
-    padding-top: 22px;
-    padding-bottom: 22px;
-}
-
-.navbar-brand a{
-    color:white;
-}
-
-/* Media Queries */
-@media screen and (max-width: 770px) {
-    .navbar-nav li{
-        width:100%;
-        border:none;
-    }
-    .navbar-inverse .nav > li > a{
-        border:none;
-    }
-
-    ..navbar-inverse .nav li
-    {
-        width:100%;
-        text-align: center;
-    }
-    .navbar-inverse .nav > li.active, 
-    .navbar-inverse .nav > li.active,
-    .navbar-inverse .nav > li.active{
-        background-color: rgb(26, 188, 156);
-     } 
-
+.navbar-inverse .navbar-brand  {
+   padding:25px;
+    color:black;
 }
 
 
  .navbar .nav-pills >li >a {
     color: #005580;
+    font-size: 21px;
+     padding:25px;
+    font-weight: 200;
  }
    .navbar .nav-pills > li > a:hover {
       background-color: #0088cc;
@@ -378,3 +350,39 @@ h6 {
     color:#0088cc;
 }
 
+.navbar-inverse{
+  background:none;
+  background-color:none;
+}
+header{
+  margin-bottom: 10px;
+}
+.navbar-inverse .container {
+  border-radius: 20px;
+  background-color: #f9f5f2;
+}
+
+
+
+/* Media Queries (On met ca a derrier)*/
+@media screen and (max-width: 770px) {
+    .navbar-nav li{
+        width:100%;
+        border:none;
+    }
+    .navbar-inverse .nav > li > a{
+        border:none;
+    }
+
+    .navbar-inverse .nav li
+    {
+        width:100%;
+        text-align: center;
+    }
+    .navbar-inverse .nav > li.active, 
+    .navbar-inverse .nav > li.active,
+    .navbar-inverse .nav > li.active{
+        background-color: rgb(26, 188, 156);
+     }
+
+}
