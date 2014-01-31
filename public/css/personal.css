@@ -168,6 +168,7 @@ figcaption .btn-info {
 #header {
    height: 20px;
    background-image:url('/public/images/long-art.jpg');
+   border-bottom: 1px solid red;
 }
 
 ul {
@@ -202,8 +203,9 @@ div.hr hr {
 
 .jumbotron {
    font-family:Lato, Helvetica, Arial, sans-serif;
-   background:url(/public/images/jag_down.png) repeat-x scroll 0 bottom, url(/public/images/hero_bg.gif) repeat scroll 0 0 transparent;
+   border-bottom: 1px solid #c3a26f; 
    padding:10px 0;
+  background-color: transparent;
 }
 .jumbotron p {
    font-size: 18px;
@@ -218,8 +220,8 @@ div.hr hr {
 }
 .new-dogs {
     padding: 30px 0;
-   background:  url(/public/images/hero_bg.gif) repeat;
    text-align: center;
+   background-color: #EEEEEE;
    color:#191919;
 }
 .news-item {
@@ -363,3 +365,16 @@ h6 {
      } 
 
 }
+
+
+ .navbar .nav-pills >li >a {
+    color: #005580;
+ }
+   .navbar .nav-pills > li > a:hover {
+      background-color: #0088cc;
+ }
+ .navbar .nav-pills .active > a {
+    background-color:#ccc;
+    color:#0088cc;
+}
+

@@ -980,7 +980,7 @@ fieldset[disabled] .btn-link:focus {
   left: 100%;
 }
 .navbar .nav > li > a {
-  color: #526476;
+  color: #95a5a6;
   display: inline-block;
   font-weight: 700;
   font-size: 15px;
@@ -1009,8 +1009,6 @@ fieldset[disabled] .btn-link:focus {
   margin-left: 12px;
 }
 .navbar .nav ul {
-  border-radius: 4px;
-  left: 0;
   list-style-type: none;
   margin-left: 0;
   opacity: 0;
@@ -1136,9 +1134,6 @@ fieldset[disabled] .btn-link:focus {
 }
 .navbar-inverse .nav > li > a {
   font-size: 16px;
-  border-bottom: 2px solid #2c3e50;
-  border-left: 2px solid #2c3e50 !important;
-  color: #ffffff;
   padding: 16px 20px 15px;
   line-height: 20px;
 }
@@ -1146,11 +1141,13 @@ fieldset[disabled] .btn-link:focus {
   left: -100%;
   margin-left: 17px;
 }
+
+
 .navbar-inverse .nav.navbar-right .open > .dropdown-menu:before {
   display: block !important;
 }
 .navbar-inverse .nav.navbar-right > li > a {
-  border-radius: 0 6px 6px 0;
+  border-radius: 6px 6px 6px 6px;
 }
 .navbar-unread,
 .navbar-new {
@@ -1168,6 +1165,7 @@ fieldset[disabled] .btn-link:focus {
   top: 28px;
   width: 6px;
   z-index: 10;
+  margin: 10;
 }
 .active .navbar-unread,
 .active .navbar-new {
@@ -1179,20 +1177,8 @@ fieldset[disabled] .btn-link:focus {
   top: 15px;
 }
 .navbar-new {
-  background-color: #e74c3c;
-  font-size: 12px;
-  line-height: 17px;
-  height: 18px;
-  margin: -9px -1px;
-  min-width: 18px;
-  padding: 0 1px;
-  width: auto;
-  -webkit-font-smoothing: subpixel-antialiased;
 }
 .navbar.navbar-inverse .nav li.dropdown.open > .dropdown-toggle {
-  background-color: #1abc9c;
-  border-bottom-color: #16a085;
-  color: #ffffff;
 }
 .navbar.navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret {
   border-bottom-color: #ffffff !important;

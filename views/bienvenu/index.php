@@ -1,11 +1,5 @@
-  <div class="jumbotron">
-  <div class="container">
-    <h2>Fees de Celestia</h2>
-          <p class="intro">Nous sommes de petit elevage de <span>dogue allemand</span> dans la compagne tres profonde a mayenne. <small>(<a href="/index.php/contact">voire la carte</a>)</small></p>
-  </div>
-</div>
 
-  <!-- Container for the remaining of the page -->
+ <!-- Container for the remaining of the page -->
   <div class="container news-item">
 
         <div class="row" style="">
@@ -15,7 +9,7 @@
                 <?php require __DIR__ . "/../shared/news.php"; ?>
             </div>
             <div class="col-md-7">
-                <?php helper::carrousel($carrousel); ?>
+                <?php helper::carrousel($carrousel, "frontpagecarrousel"); ?>
             </div>
         </div>
   </div>
@@ -24,7 +18,7 @@
 <div class="new-dogs" >
  <div class="container">
         <div class="row">
-	  <h3>Nouveau dans la maison</h3>
+	  <h3>Nos Chiens</h3>
             <div class="col-md-12">
                <?php Helper::featured_posts($featured_posts) ?>
             </div>

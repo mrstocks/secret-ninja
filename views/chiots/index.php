@@ -1,5 +1,4 @@
 <div class="container">
-<div class="row" style="">
 	<div class="col-md-8 border-right">
  
 <?php
@@ -11,7 +10,7 @@ foreach($matings as $id => $mating) {
     <section class="page-header" id="content">
         <div class="container">';
 	// Get the information from the mating
-	echo "<h2>". $mating->title."</h2>";
+	echo "<h3>". $mating->title."</h3>";
 	echo "<p><small>" . $mating->information. "</small></p>";
         echo '</div>';
    	echo '</section>';
@@ -44,5 +43,4 @@ foreach($matings as $id => $mating) {
 
 		</p>
 	</div>
-</div>
 </div>

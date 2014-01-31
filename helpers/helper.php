@@ -40,11 +40,11 @@ class Helper {
          *
          */
         public  static function image_tag($filename, $class) {
-                list($width, $height, $type, $attr) = getimagesize(__PATH__ . $filename);
+                list($width, $height, $type, $attr) = getimagesize(__PATH__ . "/".$filename);
 
                 $host = $_SERVER['HTTP_HOST'];
 
-                return "<img src='http://$host$filename' height='".$height."' width='".$width."' class='". $class ."' />";
+                return "<img src='http://$host/$filename' height='".$height."' width='".$width."' class='". $class ."' />";
         }
 	
 	public static function cdn_image($filename, $module, $id, $view, $class) {
@@ -81,7 +81,7 @@ class Helper {
          * Carrousel
          *
          */
-        public static function carrousel($data_object) {
+        public static function carrousel($data_object, $module) {
                 echo '<div id="carousel-example-generic" class="carousel slide rounded" data-ride="carousel">';
 
                 // Indicators
@@ -102,13 +102,13 @@ class Helper {
                         if ($id == 0) {
                                 echo '
                                 <div class="item active">
-                                        '. self::image_tag($value->filename,'').'
+                                        '. self::cdn_image($value->filename,$module,$value->id,"filename" ,"").'
                                         <div class="carousel-caption">
                                         '.$value->title.'
                                         </div>
                                 </div>';
                            } else {
-                                    echo '<div class="item">'.self::image_tag($value->filename,'').'<div class="carousel-caption">'.$value->title.' </div></div>';
+                                    echo '<div class="item">'.self::cdn_image($value->filename,$module,$value->id,"filename" ,"").'<div class="carousel-caption">'.$value->title.' </div></div>';
                         }
                 }
 
@@ -259,7 +259,7 @@ class Helper {
         {
           echo  '<article class="col-md-4 featured-post">
                   	<div class="post-image">
-                    		'.self::image_tag($value->filename,'').'
+                    		'.self::cdn_image($value->filename,'frontpagepost', $value->id, 'filename','').'
                     	</div>
                     	<div clas="post-caption">
 	                    <h5>'.$value->name. '</h5>
