@@ -306,7 +306,6 @@ a:hover,
 a:focus
 {
   color:#6564B2;
-  border-bottom: #5bc0de solid 2px;
 }
 
 .glyphicon-pushpin{
@@ -363,7 +362,6 @@ header{
 }
 
 
-
 /* Media Queries (On met ca a derrier)*/
 @media screen and (max-width: 770px) {
     .navbar-nav li{
@@ -386,3 +384,4 @@ header{
      }
 
 }
+
