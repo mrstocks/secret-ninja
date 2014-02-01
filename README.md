@@ -22,7 +22,7 @@ Admin:
     * Routes
       * - [ ] Parse the url and remove slashes
     *  Add helpers
-      * - [X] Error must redirect and log the errors  
+      * - [X] Error must redirect and log the errors 
       * - [X] Image helper
       * - [X] Menu helper
       * - [X] Back link
