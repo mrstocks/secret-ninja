@@ -1,5 +1,4 @@
-<section class="demo-tiles">
-<div class="container">
+<section class="demo-tiles rounded-border">
      <div class="row">
      <h4>Rester en contact et de ne jamais manquer les bonnes choses</h4>
         <div class="col-md-3">
@@ -34,16 +33,15 @@
           <div class="tile">
             <?php echo helper::image_tag('/public/images/icons/png/Chat.png', 'title-image'); ?>
             <h3 class="tile-title">Social network</h3>
-            <p>Nous sommes sociale! Vous pouvez venir nous voir sur facebook</p>
+            <p>Nous sommes sociale! Venir nous voir sur facebook</p>
             <a class="btn btn-primary  fbk btn-large btn-block" href="http://www.facebook.com/finouka.stocks">Facebook</a>
           </div>
 
         </div>
-      </div> <!-- /tiles --> 
-</div>
+      </div> <!-- /tiles -->
 </section>
+</div>
 
-  </div>
    <footer>
       <div class="container">
         <div class="row">

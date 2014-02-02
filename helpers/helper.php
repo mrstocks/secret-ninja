@@ -82,7 +82,7 @@ class Helper {
          *
          */
         public static function carrousel($data_object, $module) {
-                echo '<div id="carousel-example-generic" class="carousel slide rounded" data-ride="carousel">';
+                echo '<div id="carousel-example-generic" class="carousel slide rounded img-thumbnail" data-ride="carousel">';
 
                 // Indicators
                 echo '<ol class="carousel-indicators">';
@@ -133,54 +133,29 @@ class Helper {
 	/***
 	 *
 	 */
-        public static function puppylist($id,$title,$info) {
-		$options = array("matingpuppy_id" => $id);
-		$picture = Matingpuppyimage::first($options);
-	
-		#echo "<pre>";
-		#print_r($pictures->id);
-		#echo "</pre>";
-                #TO DO change the button
-
-		if ($picture) {
-		echo '<a href="#" data-toggle="modal" data-target="#myModal'.$id.'"><img src="'.$picture->filename.'" class="rounded" height="150" /></a>'; 
-		} else {
-		echo '
-                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal'.$id.'" style="margin: 15px;">
-                        '.$title.'
-                </button>';
-		}
-		echo '
-                <div class="modal fade" id="myModal'.$id.'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                                <div class="modal-content">
-                                        <div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                                <h4 class="modal-title" id="myModalLabel">'.$title.'</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                                '.$info.'
-                                                <div class="hr"><hr /></div>
-						<h6>Clickez dessus pour voir en grand</h6>
-						';
-						$options = array("matingpuppy_id" => $id);
-                				$pictures = Matingpuppyimage::all($options);
-						foreach ($pictures as $picture) {
-
-						echo '<a href="'.$picture->filename.'" data-lightbox="image-1" title="'.$title.'"><img src="'.$picture->filename.'" class="rounded" height="75" /></a>';
-
-						}
-						echo '
-						<div class="hr"><hr /></div>
-						<small>Plus de photo? <a href="/index.php/contact">contactez-moi</a></small>
-                                        </div>
-                                        <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                                        </div>
-                                </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
-                ';
+        public static function puppylist($mating_title, $image, $sex, $color, $price, $name, $information)
+        {
+            echo '  <div class="chiot rounded-border">
+                      <div class="panel panel-default">
+                      <div class="panel-heading">
+                      <span class="badge pull-right"> '.$price .'&euro;</span>
+                        <h3 class="panel-title"> '.$name.'</h3>
+                      </div>
+                      <div class="panel-body">
+                          <div class="col-md-4 img-thumbnail">
+                            <img src="'.$image.'" alt="Dog Image">
+                          </div>
+                          <div class="col-md-8">
+                            <p><span>Accouplement:</span> '.$mating_title.'</p>
+                            <p><span>Pris:</span> '.$price.' &euro;</p>
+                            <p><span>Sexe:</span> '.$sex.'</p>
+                            <p><span>Couleur:</span> '.$color.'</p>
+                            <p><span>Plus d\'informations:</span><br/> '.$information.'</p>
+                            <p><span>Plus de photo? ou De l\'aide? <a href="/index.php/contact">Contactez nous</a></span></p>
+                          </div>
+                      </div>
+                    </div>
+                    </div> ';
         }
 
 
@@ -249,7 +224,7 @@ class Helper {
               echo '<span class="glyphicon glyphicon-remove-sign"></span>Vendu';
               }
 
-              echo '</div></div><div class="tag-top"> <span class="glyphicon glyphicon-pushpin"></span></div></div></div></div></div>';
+              echo '</div></div><div class="tag-top"><span class="glyphicon glyphicon-pushpin"></span></div></div></div></div></div>';
             }
       }
 

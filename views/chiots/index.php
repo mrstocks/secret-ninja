@@ -1,30 +1,31 @@
 <div class="container">
-	<div class="col-md-8 border-right">
- 
-<?php
+ <section class="jumbotron rounded-border" id="content">
+          <h3>Chiots</h3>
+          <p>Voici une liste de nos meilleurs chiots <br/>
+					<a href="/index.php/contact#contact">Contactons nous</a> si intéressé par un
+  				</p>
+  </section>
 
-// I don't know what i doing so i will just follow the flow
-foreach($matings as $id => $mating) {
-	
-  echo'
-    <section class="page-header" id="content">
-        <div class="container">';
-	// Get the information from the mating
-	echo "<h3>". $mating->title."</h3>";
-	echo "<p><small>" . $mating->information. "</small></p>";
-        echo '</div>';
-   	echo '</section>';
-	echo '<div class="panel-group" id="accordion">';
-	// Get the puppies from that mating
-	foreach($mating->matingpuppies as $id => $puppy) {
-		$helper::puppylist($puppy->id, $puppy->name, $puppy->information);
-	}
-	echo '</div>';
-	echo "<br />";
-}
-?>
+<div class="row">
+	<div class="col-md-8">
+		<div class="col-md-12">
+
+			<?php
+				foreach($matings as $id => $mating) 
+					{
+						$mating_title = $mating->title;
+						foreach($mating->matingpuppies as $id => $puppy) 
+						{ 
+
+							Helper::puppylist($mating_title, $puppy->image, $puppy->sex, $puppy->color, $puppy->price, $puppy->name, $puppy->information);
+						}
+					}
+			?>
+		</div>
 	</div>
-	<div class="col-mb-4" style="margin-left: 15px;">
+
+	<div class="col-md-4 contact">
+	<div class="panel-body rounded-border">
 		<h3>Comment?</h3>	
 		<p>Nous sommes un tout petit élevage de dogues allemans, nous produisons des parfait chiots
 		arlequins, noirs et bleus LOF. <br />
@@ -42,5 +43,6 @@ foreach($matings as $id => $mating) {
 
 
 		</p>
+	</div>
 	</div>
 </div>

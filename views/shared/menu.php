@@ -1,7 +1,7 @@
 <div id="header"></div>
 <header>
     		<nav class="navbar navbar-inverse" role="navigation">
-  		<div class="container">
+  			<div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -10,16 +10,27 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="/index.php">Fees de Celestia</a>
+		       <div class="navbar-brand">
+ 					    <img src="/public/images/logo.png"  alt="Our Logo" /> <a href="/index.php">Fées De Celestia</a>
+ 	    </div>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav nav-pills pull-right">
-			            <li><a href="/index.php">Accueil<br></a></li>
-			            <li><a href="/index.php/chiens">Chiens</a></li>
-			            <li><a href="/index.php/chiots">Chiots</a></li>
-			            <li><a href="/index.php/gallery">Gallerie</a></li>
-			            <li><a href="/index.php/contact">Contact</a></li>
+			            <li class="<?php if ($routes->controller == 'bienvenu') { echo 'active'; } ?>"><a href="/index.php">Accueil<br></a></li>
+			            <li><a href="#">Chiens &nbsp;<span class="glyphicon glyphicon-chevron-down"</span></a>
+								<ul>
+					             <?php 
+					             $dog_menu = $helper->get_dogs_list();	
+					             foreach ($dog_menu as $dog) {
+					               echo "<li><a href='/index.php/chiens/show/". $dog->id ."'>". $dog->name ."</a></li>"; 
+					             } 
+					             ?>	
+					           </ul> <!-- /Sub menu -->
+			            </li>
+			            <li class="<?php if ($routes->controller == 'chiots') { echo 'active'; } ?>"><a href="/index.php/chiots">Chiots</a></li>
+			            <li class="<?php if ($routes->controller == 'gallery') { echo 'active'; } ?>"><a href="/index.php/gallery">Gallerie</a></li>
+			            <li class="<?php if ($routes->controller == 'contact') { echo 'active'; } ?>"><a href="/index.php/contact">Contact</a></li>
 		        	</ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-->

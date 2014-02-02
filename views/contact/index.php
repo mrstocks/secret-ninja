@@ -40,27 +40,31 @@
 
 		google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-	
-	<section class="jumbotron" id="content">
-        <div class="container">
-          	<h2>Contactez-nous</h2>
+
+  <div class="container">
+	<section class="jumbotron rounded-border" id="content">
+          	<h3>Contactez-nous</h3>
           	<p>S'il vous plaît nous localiser à l'aide de notre carte ci-dessous.<br/>
  				Vous pouvez aussi parler à nous en laissant <a href="#contact">un message ici.</a>
 				</p>
-        </div>
   </section>
+  </div>
+
 	<div class="container">
  	<div class="row">
  		<div>
  			<?php echo $alert_msg?>
 
  			<!-- Google maps will be drawn here -->
-     		 <div class="gmap" id="map-canvas">
+ 			<div class="col-md-12">
+     		 <div class="gmap rounded-border" id="map-canvas">
           </div>
+			</div>
 
 		</div>
- 		<div class="col-md-9">
- 			<div class="panel panel-info">
+		<div class="contact">
+ 		<div class="col-md-9 ">
+ 			<div class="panel panel-info rounded-border">
 				<a name="contact"></a>
  				<div class="panel-heading">Laissez votre message ici</div>
 				<div class="panel-body">
@@ -101,7 +105,7 @@
 
 		<div class="col-md-3">
 				<?php echo helper::image_tag('/public/images/arrow.png', ''); ?>
-					<div class="panel-body">
+					<div class="panel-body rounded-border">
                                   <div class="address">
                                       <address>
                                          <!-- Company name -->
@@ -119,5 +123,5 @@
 					</div>
  					</div>
  			</div>
-</div>
+ 			</div>
 </div>

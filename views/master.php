@@ -71,5 +71,10 @@
     <script src="/public/js/jquery.stacktable.js"></script>
     <script src="/public/js/lightbox-2.6.min.js"></script>
     <script src="/public/js/application.js"></script>
+
+        <script>
+        $('.dropdown-toggle').dropdown();
+      </script>
+      
   </body>
 </html>
