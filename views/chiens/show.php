@@ -1,9 +1,11 @@
-<section class="page-header" id="content">
-  <div class="container">
-    <h2><?php echo $dog_by_id->name ?></h2>
-  </div>
-</section>
+<br style="clear: all;" />  
 
+<div class="container">
+<section class="jumbotron rounded-border" id="content">
+    <h3><?php echo $dog_by_id->name ?></h3>
+</section>
+</div>
+<br style="clear: all">
 <div class="container">
 
 	<div class="row">

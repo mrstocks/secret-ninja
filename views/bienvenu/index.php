@@ -1,3 +1,5 @@
+<br style="clear: all;" />
+
  <!-- Container for the remaining of the page -->
  <link href='http://fonts.googleapis.com/css?family=Redressed' rel='stylesheet' type='text/css'>
 
@@ -7,7 +9,12 @@
           <p>Vous êtes à la recherche d'un nouveau chien ou chiot à partager votre vie avec?<br />
 Nous sommes ici pour vous fournir tout ce que vous avez été cherchez!
   </p>
+ <p>
+   Membre du Doggen Club de France depuis 2009.
+ </p>
   </section>
+
+<br style="clear: all;" />
 
   <div class="news-item rounded-border">
         <div class="row">
@@ -26,6 +33,8 @@ Nous sommes ici pour vous fournir tout ce que vous avez été cherchez!
         </div>
   </div>
 
+<br style="clear: all;" />
+
 <div class="new-dogs rounded-border" >
         <div class="row">
 	  <h3>Nos Chiens</h3>
@@ -33,8 +42,9 @@ Nous sommes ici pour vous fournir tout ce que vous avez été cherchez!
                <?php Helper::featured_posts($featured_posts) ?>
             </div>
         </div>
-        </div>
+ </div>
 
+<br style="clear: all;" />
   <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
   <script>
     videojs.options.flash.swf = "video-js.swf";
@@ -53,3 +63,4 @@ Nous sommes ici pour vous fournir tout ce que vous avez été cherchez!
 
       	</div>
       </div>
+

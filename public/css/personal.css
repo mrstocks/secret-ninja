@@ -6,6 +6,9 @@ body{
   background-attachment: fixed;
 }
 
+.row {
+}
+
 .rounded-border{
   border:2px solid white; 
   border-radius: 10px;

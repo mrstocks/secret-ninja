@@ -1,5 +1,5 @@
 
-
+<br style="clear: all;" />
 	<!-- Loading JS for Google Maps -->
   	 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpH0KBf6QUYGff2dAFwbVhEtYrF_zfA_U&sensor=false">
     </script>
@@ -50,6 +50,7 @@
   </section>
   </div>
 
+<br style="clear: all;" />
 	<div class="container">
  	<div class="row">
  		<div>
@@ -62,8 +63,10 @@
 			</div>
 
 		</div>
+
 		<div class="contact">
  		<div class="col-md-9 ">
+<br style="clear: all;" />
  			<div class="panel panel-info rounded-border">
 				<a name="contact"></a>
  				<div class="panel-heading">Laissez votre message ici</div>
@@ -104,6 +107,7 @@
 		</div>
 
 		<div class="col-md-3">
+<br style="clear: all;" />
 				<?php echo helper::image_tag('/public/images/arrow.png', ''); ?>
 					<div class="panel-body rounded-border">
                                   <div class="address">

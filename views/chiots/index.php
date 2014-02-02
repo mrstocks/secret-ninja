@@ -1,10 +1,14 @@
+
+<br style="clear: all">
+
 <div class="container">
  <section class="jumbotron rounded-border" id="content">
-          <h3>Chiots</h3>
+          <h3>Nos productions</h3>
           <p>Voici une liste de nos meilleurs chiots <br/>
 					<a href="/index.php/contact#contact">Contactons nous</a> si intéressé par un
   				</p>
   </section>
+<br style="clear: all">
 
 <div class="row">
 	<div class="col-md-8">
@@ -24,7 +28,7 @@
 
 	<div class="col-md-4 contact">
 	<div class="panel-body rounded-border">
-		<h3>Comment?</h3>
+		<h4>Comment?</h4>
 		<p>Nous sommes un tout petit élevage de dogues allemans, nous produisons des parfait chiots
 		arlequins, noirs et bleus LOF. <br />
 		<b>Il vous suffit de cliquez sur un boutton</b> a gauche pour avoir des photos est une description.</br />

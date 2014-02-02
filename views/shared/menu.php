@@ -1,3 +1,6 @@
+<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+
+
 <div id="header"></div>
 <header>
     		<nav class="navbar navbar-inverse" role="navigation">
@@ -10,9 +13,13 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		       <div class="navbar-brand">
- 					    <img src="/public/images/logo.png"  alt="Our Logo" /> <a href="/index.php">Fées De Celestia</a>
- 	    </div>
+
+			<div class="navbar-brand">
+			<p style="font-family: 'The Girl Next Door', cursive;">
+		  	<a href="/index.php" style="font-size: 28px; color: black">F&eacute;es de Celestia</a><br />
+			  Elevage de doggue allemand dans ma mayenne
+			</p>
+			</div>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -33,6 +40,7 @@
 			            <li class="<?php if ($routes->controller == 'contact') { echo 'active'; } ?>"><a href="/index.php/contact">Contact</a></li>
 		        	</ul>
 		    </div><!-- /.navbar-collapse -->
+<br style="clear: all;" />
 		  </div><!-- /.container-->
 		</nav>
 </header>

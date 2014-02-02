@@ -1,3 +1,5 @@
+<br style="clear: all;" />
+
 <section class="demo-tiles rounded-border">
      <div class="row">
      <h4>Rester en contact et de ne jamais manquer les bonnes choses</h4>
@@ -41,7 +43,7 @@
       </div> <!-- /tiles -->
 </section>
 </div>
-
+<br style="clear: all;" />
    <footer>
       <div class="container">
         <div class="row">
