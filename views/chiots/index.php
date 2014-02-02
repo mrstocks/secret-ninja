@@ -8,7 +8,6 @@
 
 <div class="row">
 	<div class="col-md-8">
-		<div class="col-md-12">
 
 			<?php
 				foreach($matings as $id => $mating) 
@@ -21,18 +20,20 @@
 						}
 					}
 			?>
-		</div>
 	</div>
 
 	<div class="col-md-4 contact">
 	<div class="panel-body rounded-border">
-		<h3>Comment?</h3>	
+		<h3>Comment?</h3>
 		<p>Nous sommes un tout petit élevage de dogues allemans, nous produisons des parfait chiots
 		arlequins, noirs et bleus LOF. <br />
 		<b>Il vous suffit de cliquez sur un boutton</b> a gauche pour avoir des photos est une description.</br />
-		La pluspart des chiots sont destiné a l'expo ou au sein d'unegentil famille.<br />
-		<br />
-		Vous pouvez aussi consulter : <br />
+		La pluspart des chiots sont destiné a l'expo ou au sein d'unegentil famille.
+	</p>
+	</div>
+	<div class="panel-body rounded-border">
+	<p>
+			<h6> Vous pouvez aussi consulter : </h6 >
 		<a href="/index.php/gallerie/">Notre gallerie</a><br />
 		<?php 
 		foreach($dogs as $dog) {
