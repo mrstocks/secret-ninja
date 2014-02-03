@@ -1,21 +1,46 @@
 
-
+<br style="clear: all;" />
 	<!-- Loading JS for Google Maps -->
   	 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpH0KBf6QUYGff2dAFwbVhEtYrF_zfA_U&sensor=false">
     </script>
     <a name="map"></a>
     <script type="text/javascript">
 
-      function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(48.491066, -0.449788),
-          zoom: 10
-        };	
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
+    	var laGuiltiere = new google.maps.LatLng(48.491066, -0.449788);
+		var marker;
+		var map;
+
+		function initialize() {
+		  var mapOptions = {
+		    zoom: 14,
+		    center: laGuiltiere
+		  };
+
+		  map = new google.maps.Map(document.getElementById('map-canvas'),
+		          mapOptions);
+
+		  marker = new google.maps.Marker({
+		    map:map,
+		    title:"Vous pouvez nous trouver ici",
+		    animation: google.maps.Animation.DROP,
+		    position: laGuiltiere
+		  });
+		  google.maps.event.addListener(marker, 'click', toggleBounce);
+		}
+
+		function toggleBounce() {
+
+		  if (marker.getAnimation() != null) {
+		    marker.setAnimation(null);
+		  } else {
+		    marker.setAnimation(google.maps.Animation.BOUNCE);
+		    setTimeout(toggleBounce, 5000);
+		  }
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
     </script>
+<<<<<<< HEAD
 	
 	<section class="page-header" id="content">
         <div class="container">
@@ -25,18 +50,36 @@
 				</p>
         </div>
   </section>
+=======
+
+  <div class="container">
+	<section class="jumbotron rounded-border" id="content">
+          	<h3>Contactez-nous</h3>
+          	<p>S'il vous plaît nous localiser à l'aide de notre carte ci-dessous.<br/>
+ 				Vous pouvez aussi parler à nous en laissant <a href="#contact">un message ici.</a>
+				</p>
+  </section>
+  </div>
+
+<br style="clear: all;" />
+>>>>>>> ab36d539c734ca1f18a7a133a0186df73bf1f267
 	<div class="container">
  	<div class="row">
  		<div>
  			<?php echo $alert_msg?>
 
  			<!-- Google maps will be drawn here -->
-     		 <div class="gmap" id="map-canvas">
+ 			<div class="col-md-12">
+     		 <div class="gmap rounded-border" id="map-canvas">
           </div>
+			</div>
 
 		</div>
- 		<div class="col-md-9">
- 			<div class="panel panel-info">
+
+		<div class="contact">
+ 		<div class="col-md-9 ">
+<br style="clear: all;" />
+ 			<div class="panel panel-info rounded-border">
 				<a name="contact"></a>
  				<div class="panel-heading">Laissez votre message ici</div>
 				<div class="panel-body">
@@ -76,8 +119,9 @@
 		</div>
 
 		<div class="col-md-3">
+<br style="clear: all;" />
 				<?php echo helper::image_tag('/public/images/arrow.png', ''); ?>
-					<div class="panel-body">
+					<div class="panel-body rounded-border">
                                   <div class="address">
                                       <address>
                                          <!-- Company name -->
@@ -95,5 +139,5 @@
 					</div>
  					</div>
  			</div>
-</div>
+ 			</div>
 </div>

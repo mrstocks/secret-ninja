@@ -22,7 +22,7 @@ Admin:
     * Routes
       * - [ ] Parse the url and remove slashes
     *  Add helpers
-      * - [X] Error must redirect and log the errors  
+      * - [X] Error must redirect and log the errors 
       * - [X] Image helper
       * - [X] Menu helper
       * - [X] Back link
@@ -52,3 +52,10 @@ Admin:
     * - [X] Fill in username and password for gmail account to be used
     * - [X] Add address and telephone number
     * - [X] Link to section with CV etc
+
+/* Frontend */
+-- add infinity scroll to gallery
+-- correct front page video
+-- more front page design
+-- more pupies design
+-- correct UTF 8 error

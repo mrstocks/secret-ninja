@@ -40,13 +40,24 @@ class Helper {
          *
          */
         public  static function image_tag($filename, $class) {
+<<<<<<< HEAD
                 list($width, $height, $type, $attr) = getimagesize($filename);
+=======
+                list($width, $height, $type, $attr) = getimagesize(__PATH__ . "/".$filename);
+>>>>>>> ab36d539c734ca1f18a7a133a0186df73bf1f267
 
                 $host = $_SERVER['HTTP_HOST'];
 
-                return "<img src='http://$host$filename' height='".$height."' width='".$width."' class='". $class ."' />";
+                return "<img src='http://$host/$filename' height='".$height."' width='".$width."' class='". $class ."' />";
         }
+	
+	public static function cdn_image($filename, $module, $id, $view, $class) {
+		return "<img src='http://cdn.elevage-fees-de-celestia.fr/uploads/$module/$view/$id/$filename' class='$class'/>";
+	}
 
+	public static function cdn_static($filename, $class) {
+		return "<img src='http://cdn.elevage-fees-de-celestia.fr/static/".$filename."' class='".$class."' />";
+	}
         /**
          * display an image with custom size
          * attibutes: $option array heigh, width, class
@@ -74,8 +85,8 @@ class Helper {
          * Carrousel
          *
          */
-        public static function carrousel($data_object) {
-                echo '<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">';
+        public static function carrousel($data_object, $module) {
+                echo '<div id="carousel-example-generic" class="carousel slide rounded img-thumbnail" data-ride="carousel">';
 
                 // Indicators
                 echo '<ol class="carousel-indicators">';
@@ -95,13 +106,21 @@ class Helper {
                         if ($id == 0) {
                                 echo '
                                 <div class="item active">
+<<<<<<< HEAD
                                         '. self::image_tag($value->filename,'').'
+=======
+                                        '. self::cdn_image($value->filename,$module,$value->id,"filename" ,"").'
+>>>>>>> ab36d539c734ca1f18a7a133a0186df73bf1f267
                                         <div class="carousel-caption">
                                         '.$value->title.'
                                         </div>
                                 </div>';
                            } else {
+<<<<<<< HEAD
                                     echo '<div class="item">'.self::image_tag($value->filename,'').'<div class="carousel-caption">'.$value->title.' </div></div>';
+=======
+                                    echo '<div class="item">'.self::cdn_image($value->filename,$module,$value->id,"filename" ,"").'<div class="carousel-caption">'.$value->title.' </div></div>';
+>>>>>>> ab36d539c734ca1f18a7a133a0186df73bf1f267
                         }
                 }
 
@@ -126,6 +145,7 @@ class Helper {
 	/***
 	 *
 	 */
+<<<<<<< HEAD
         public static function puppylist($id,$title,$info) {
 		$options = array("matingpuppy_id" => $id);
 		$picture = Matingpuppyimage::first($options);
@@ -174,6 +194,31 @@ class Helper {
                         </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
                 ';
+=======
+        public static function puppylist($mating_title, $image, $sex, $color, $price, $name, $information)
+        {
+            echo '  <div class="chiot rounded-border">
+                      <div class="panel panel-default">
+                      <div class="panel-heading">
+                      <span class="badge pull-right"> '.$price .'&euro;</span>
+                        <h3 class="panel-title"> '.$name.'</h3>
+                      </div>
+                      <div class="panel-body">
+                          <div class="col-md-4 img-thumbnail">
+                            <img src="'.$image.'" alt="Dog Image">
+                          </div>
+                          <div class="col-md-8">
+                            <p><span>Accouplement:</span> '.$mating_title.'</p>
+                            <p><span>Pris:</span> '.$price.' &euro;</p>
+                            <p><span>Sexe:</span> '.$sex.'</p>
+                            <p><span>Couleur:</span> '.$color.'</p>
+                            <p><span>Plus d\'informations:</span><br/> '.$information.'</p>
+                            <p><span>Plus de photo? ou De l\'aide? <a href="/index.php/contact">Contactez nous</a></span></p>
+                          </div>
+                      </div>
+                    </div>
+                    </div> ';
+>>>>>>> ab36d539c734ca1f18a7a133a0186df73bf1f267
         }
 
 
@@ -229,7 +274,7 @@ class Helper {
                       </figcaption>';
               }
               echo '<div class="tile-caption"><p>'.$value->title.'</p>
-                      <div class="box-tag rotate-left ">
+                      <div class="box-tag">
                         <div class="tag-bottom">
                           <div class="tag-text">';
 
@@ -242,7 +287,7 @@ class Helper {
               echo '<span class="glyphicon glyphicon-remove-sign"></span>Vendu';
               }
 
-              echo '</div></div><div class="tag-top"></div></div></div></div></div>';
+              echo '</div></div><div class="tag-top"><span class="glyphicon glyphicon-pushpin"></span></div></div></div></div></div>';
             }
       }
 
@@ -252,7 +297,11 @@ class Helper {
         {
           echo  '<article class="col-md-4 featured-post">
                   	<div class="post-image">
+<<<<<<< HEAD
                     		<img src="'.$value->filename.'" alt="desc" style="width:100%" />
+=======
+                    		'.self::cdn_image($value->filename,'frontpagepost', $value->id, 'filename','').'
+>>>>>>> ab36d539c734ca1f18a7a133a0186df73bf1f267
                     	</div>
                     	<div clas="post-caption">
 	                    <h5>'.$value->name. '</h5>

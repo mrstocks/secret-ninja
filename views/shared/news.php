@@ -1,8 +1,8 @@
 <?php
 
-// TODO get the last 10 news
+// TODO get the last 4 news
 $options = array(
-			'limit' => 10,
+			'limit' => 4,
 			'order' => "ID DESC"
 		);
 
