@@ -16,8 +16,8 @@
 
 			<div class="navbar-brand">
 			<p style="font-family: 'The Girl Next Door', cursive;">
-		  	<a href="/index.php" style="font-size: 28px; color: black">F&eacute;es de Celestia</a><br />
-			  Elevage de doggue allemand dans ma mayenne
+		  	<a href="/index.php">F&eacute;es de Celestia</a><br />
+			  <span class="nav-brand-extra">Elevage de doggue allemand dans ma mayenne</span>
 			</p>
 			</div>
 		    </div>
@@ -25,7 +25,7 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav nav-pills pull-right">
 			            <li class="<?php if ($routes->controller == 'bienvenu') { echo 'active'; } ?>"><a href="/index.php">Accueil<br></a></li>
-			            <li><a href="#">Chiens &nbsp;<span class="glyphicon glyphicon-chevron-down"</span></a>
+			            <li class="<?php if ($routes->controller == 'chiens') { echo 'active'; } ?>"><a href="#">Chiens &nbsp;<span class="glyphicon glyphicon-chevron-down"</span></a>
 								<ul>
 					             <?php 
 					             $dog_menu = $helper->get_dogs_list();	
