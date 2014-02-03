@@ -16,14 +16,19 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-
+	
+	<section class="page-header" id="content">
+        <div class="container">
+          	<h2>Contactez-nous</h2>
+          	<p>S'il vous plaît nous localiser à l'aide de notre carte ci-dessous.<br/>
+ 				Vous pouvez aussi parler à nous en laissant <a href="#contact">un message ici.</a>
+				</p>
+        </div>
+  </section>
 	<div class="container">
  	<div class="row">
  		<div>
  			<?php echo $alert_msg?>
- 			<h4>Contactez-nous</h4>
- 			<h6>S'il vous plaît nous localiser à l'aide de notre carte ci-dessous.<br/>
- 				Vous pouvez aussi parler à nous en laissant <a href="#contact">un message ici.</a></h6>
 
  			<!-- Google maps will be drawn here -->
      		 <div class="gmap" id="map-canvas">

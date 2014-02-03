@@ -4,7 +4,7 @@
 Url : http://elevage-fees-de-celestia.fr:3333/<br />
 Template : http://62.210.239.213:3333/public/Flat-UI-master/<br />
 Mysql Admin: http://elevage-fees-de-celestia.fr:3333/phpmyadmin/<br />
-Datamapping ORM :http://www.phpactiverecord.org/ We use the developper version not the stable one
+Datamapping ORM :http://www.phpactiverecord.org/ We use the developer version not the stable one
 Admin:
   * username: mrstocks
   * password: oliver
@@ -17,7 +17,7 @@ Admin:
 
 <h4>TODO list</h4>
   * Gallery Section
-     * -[ ] Add a column for links on the gallery sections table
+     * -[ ] Fill column for links on the gallery sections table
   * Core application
     * Routes
       * - [ ] Parse the url and remove slashes
@@ -34,9 +34,7 @@ Admin:
   * Dogs controller
     * - [X] Rename the testright to textright code also
   * General UI
-    * - [ ] All the design is pushed right there i don't know why maybe a div missing
     * - [ ] Video isn't the right size
-    * - [ ] link on the footer don't work, need to make a contact section
     * - [ ] General UFT8 problem all the é don't work
     * - [ ] The footer is not responsive
   * Puppies section

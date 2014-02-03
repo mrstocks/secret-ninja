@@ -10,7 +10,7 @@ class Helper {
         /**
           * Get the list of the dogs for the menu
           *
-        */
+          */
         public function get_dogs_list() {
                 // Only get the id and the name
                 $dogs = Dog::find('all', array('select' => 'id, name'));
@@ -20,8 +20,8 @@ class Helper {
 
         /**
          * Call if not found
-*
-*/
+         *
+         */
         public function not_found($info) {
                 $error = Errors::create(array(
                         'level'        => '1',
@@ -40,7 +40,7 @@ class Helper {
          *
          */
         public  static function image_tag($filename, $class) {
-                list($width, $height, $type, $attr) = getimagesize(__PATH__ . $filename);
+                list($width, $height, $type, $attr) = getimagesize($filename);
 
                 $host = $_SERVER['HTTP_HOST'];
 
@@ -95,13 +95,13 @@ class Helper {
                         if ($id == 0) {
                                 echo '
                                 <div class="item active">
-                                        '. self::image_tag($value->filename,'rounded').'
+                                        '. self::image_tag($value->filename,'').'
                                         <div class="carousel-caption">
                                         '.$value->title.'
                                         </div>
                                 </div>';
                            } else {
-                                    echo '<div class="item">'. self::image_tag($value->filename,'rounded').'<div class="carousel-caption">'.$value->title.' </div></div>';
+                                    echo '<div class="item">'.self::image_tag($value->filename,'').'<div class="carousel-caption">'.$value->title.' </div></div>';
                         }
                 }
 
@@ -123,23 +123,49 @@ class Helper {
                 ';
         }
 
-        public static function accordion($id,$title,$info) {
+	/***
+	 *
+	 */
+        public static function puppylist($id,$title,$info) {
+		$options = array("matingpuppy_id" => $id);
+		$picture = Matingpuppyimage::first($options);
+	
+		#echo "<pre>";
+		#print_r($pictures->id);
+		#echo "</pre>";
                 #TO DO change the button
-                echo '
+
+		if ($picture) {
+		echo '<a href="#" data-toggle="modal" data-target="#myModal'.$id.'"><img src="'.$picture->filename.'" class="rounded" height="150" /></a>'; 
+		} else {
+		echo '
                 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal'.$id.'" style="margin: 15px;">
                         '.$title.'
-                </button>
-
+                </button>';
+		}
+		echo '
                 <div class="modal fade" id="myModal'.$id.'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                                 <div class="modal-content">
                                         <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                                 <h4 class="modal-title" id="myModalLabel">'.$title.'</h4>
                                         </div>
                                         <div class="modal-body">
                                                 '.$info.'
-                                                <hr />
+                                                <div class="hr"><hr /></div>
+						<h6>Clickez dessus pour voir en grand</h6>
+						';
+						$options = array("matingpuppy_id" => $id);
+                				$pictures = Matingpuppyimage::all($options);
+						foreach ($pictures as $picture) {
+
+						echo '<a href="'.$picture->filename.'" data-lightbox="image-1" title="'.$title.'"><img src="'.$picture->filename.'" class="rounded" height="75" /></a>';
+
+						}
+						echo '
+						<div class="hr"><hr /></div>
+						<small>Plus de photo? <a href="/index.php/contact">contactez-moi</a></small>
                                         </div>
                                         <div class="modal-footer">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
@@ -192,7 +218,7 @@ class Helper {
                   }
               }
               echo '<div class="tile-item">';
-              echo '<img src="',$value->filename. '"/>';
+              echo '<a href="'.$value->filename.'" data-lightbox="image-1" title="'.$value->title.'"><img src="',$value->filename. '"/></a>';
 
               // IF dog is available for sale
               if ($value->available)
@@ -218,6 +244,22 @@ class Helper {
 
               echo '</div></div><div class="tag-top"></div></div></div></div></div>';
             }
+      }
+
+      public static function featured_posts($post_info)
+      {
+        foreach ($post_info as $id => $value)
+        {
+          echo  '<article class="col-md-4 featured-post">
+                  	<div class="post-image">
+                    		<img src="'.$value->filename.'" alt="desc" style="width:100%" />
+                    	</div>
+                    	<div clas="post-caption">
+	                    <h5>'.$value->name. '</h5>
+	                        <p>'.$value->caption.'</p>
+	                    </div>
+	             </article>';
+        }
       }
 }
 

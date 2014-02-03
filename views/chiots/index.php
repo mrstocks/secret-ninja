@@ -1,4 +1,4 @@
-
+<div class="container">
 <div class="row" style="">
 	<div class="col-md-8 border-right">
  
@@ -7,26 +7,29 @@
 // I don't know what i doing so i will just follow the flow
 foreach($matings as $id => $mating) {
 	
+  echo'
+    <section class="page-header" id="content">
+        <div class="container">';
 	// Get the information from the mating
-	echo "<h3>". $mating->title."</h3>";
-	echo "<p>" . $mating->information. "</p>";
-
+	echo "<h2>". $mating->title."</h2>";
+	echo "<p><small>" . $mating->information. "</small></p>";
+        echo '</div>';
+   	echo '</section>';
 	echo '<div class="panel-group" id="accordion">';
 	// Get the puppies from that mating
 	foreach($mating->matingpuppies as $id => $puppy) {
-		$helper::accordion($puppy->id, $puppy->name, $puppy->information);
+		$helper::puppylist($puppy->id, $puppy->name, $puppy->information);
 	}
 	echo '</div>';
-
-	echo "<hr />";
+	echo "<br />";
 }
 ?>
 	</div>
 	<div class="col-mb-4" style="margin-left: 15px;">
 		<h3>Comment?</h3>	
-		<p>Nous sommes un tout petit élevage de dogues allemans, nous produisons des parfait chiots 
+		<p>Nous sommes un tout petit élevage de dogues allemans, nous produisons des parfait chiots
 		arlequins, noirs et bleus LOF. <br />
-		Il vous suffit de cliquez sur un boutton a gauche pour avoir des photos est une description.</br />
+		<b>Il vous suffit de cliquez sur un boutton</b> a gauche pour avoir des photos est une description.</br />
 		La pluspart des chiots sont destiné a l'expo ou au sein d'unegentil famille.<br />
 		<br />
 		Vous pouvez aussi consulter : <br />
@@ -37,6 +40,9 @@ foreach($matings as $id => $mating) {
 		}	
 		?>
 		<a href="/index.php/contact">Plus de photo? De l'aide?</a><br />
+
+
 		</p>
 	</div>
+</div>
 </div>
