@@ -1,4 +1,3 @@
-
 <br style="clear: all">
         <div class="container">
         <section class="jumbotron rounded-border" id="content">

@@ -1,4 +1,7 @@
 <?php 
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+
 /**
  * Require my stupid config
  * If someone wants to fix me. please do

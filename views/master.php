@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Fees de Celestia - Elevage de Dogue allemand en France</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/public/images/logo.png" type="image/x-icon">
-    <link rel="icon" href="/public/images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon">
 
     <!-- Loading Bootstrap -->
     <link href="/public/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -16,6 +16,7 @@
     <link href="/public/css/video-js.css" rel="stylesheet" type="text/css">
     <script src="/public/js/video.js"></script>
     <link href="/public/css/personal.css" rel="stylesheet">
+    <link href="/public/css/lightbox.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -69,6 +70,7 @@
     <script src="/public/js/jquery.tagsinput.js"></script>
     <script src="/public/js/jquery.placeholder.js"></script>
     <script src="/public/js/jquery.stacktable.js"></script>
+    <script src="http://vjs.zencdn.net/4.1/video.js"></script>
     <script src="/public/js/lightbox-2.6.min.js"></script>
     <script src="/public/js/application.js"></script>
 

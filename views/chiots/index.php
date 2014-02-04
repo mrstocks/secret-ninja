@@ -1,10 +1,9 @@
-
 <br style="clear: all">
 
 <div class="container">
  <section class="jumbotron rounded-border" id="content">
           <h3>Nos productions</h3>
-          <p>Voici une liste de nos meilleurs chiots <br/>
+          <p>Voici une liste de nos chiots a vendre ou vendu.<br/>
 					<a href="/index.php/contact#contact">Contactons nous</a> si intéressé par un
   				</p>
   </section>
@@ -50,4 +49,5 @@
 		</p>
 	</div>
 	</div>
+</div>
 </div>

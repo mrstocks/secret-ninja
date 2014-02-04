@@ -40,7 +40,6 @@
 
 		google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-
   <div class="container">
 	<section class="jumbotron rounded-border" id="content">
           	<h3>Contactez-nous</h3>

@@ -1,3 +1,4 @@
+
 <br style="clear: all;" />
 
  <!-- Container for the remaining of the page -->
@@ -63,4 +64,3 @@ Nous sommes ici pour vous fournir tout ce que vous avez été cherchez!
 
       	</div>
       </div>
-

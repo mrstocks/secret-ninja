@@ -1,5 +1,5 @@
 <br style="clear: all;" />
-
+<div class="container">
 <section class="demo-tiles rounded-border">
      <div class="row">
      <h4>Rester en contact et de ne jamais manquer les bonnes choses</h4>
@@ -32,7 +32,7 @@
         </div>
 
         <div class="col-md-3">
-          <div class="tile">
+          <div class="tile tile-hot">
             <?php echo helper::image_tag('/public/images/icons/png/Chat.png', 'title-image'); ?>
             <h3 class="tile-title">Social network</h3>
             <p>Nous sommes sociale! Venir nous voir sur facebook</p>
@@ -40,6 +40,12 @@
           </div>
 
         </div>
+      </div> <!-- /tiles --> 
+</div>
+
+
+  </div>
+   <footer style="">
       </div> <!-- /tiles -->
 </section>
 </div>
