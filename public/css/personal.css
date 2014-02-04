@@ -1,8 +1,9 @@
-
 body{
 background-image: url(http://farm9.staticflickr.com/8478/8176819849_fb94e10e1b_b.jpg);
   height: 100%;
   width:100%;
+  repeat:none;
+  background-size:cover;
   background-attachment: fixed;
 }
 
@@ -12,7 +13,7 @@ background-image: url(http://farm9.staticflickr.com/8478/8176819849_fb94e10e1b_b
 .rounded-border{
   border:2px solid white; 
   border-radius: 10px;
-  margin:3px 0px;
+  margin:0px;
 }
 .float-left-margin-left-15 {
    float: left;
@@ -171,6 +172,7 @@ figcaption .btn-info {
 }
 
 .navbar-inverse .navbar-brand {
+  color:#232830;
    border:none;
 }
 
@@ -345,13 +347,6 @@ h6 {
 
 .navbar-inverse .navbar-brand  {
   padding-top:0;
-    color:black;
-}
-
-.navbar-inverse .navbar-brand  img {
-position: relative;
-margin-top: -20px;
-height: 90px;
 }
 
  .navbar .nav-pills >li >a {
@@ -373,10 +368,6 @@ height: 90px;
   margin-bottom: 10px;
   background-color: white;
   border-radius: 0;
-  background-color: white;
-  opacity:0.8;
-  filter:Alpha(opacity=80); /* IE8 and earlier */
-  border-bottom: 1px solid red;
 }
 
 .news-item{
@@ -461,7 +452,7 @@ height: 90px;
 }
 
 .chiot .panel-heading{
-  background-color: #CCCCCC;
+  background-color: #d00857;
   border-radius: 4px;
   line-height: 13px;
 }
@@ -493,31 +484,61 @@ height: 90px;
     background-color: rgb(22, 160, 133);
 }
 
+.dog-carrousel{
+  margin: 20px 0;
+}
 
+.table-striped{
+  border-radius: 10px;
+  padding:10px;
+  background-color:#d8dfe5;
+}
 
+.navbar-brand a{
+  font-size: 30px;
+  color:#232830;
+  line-height: 30px;
+}
 
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #fcb43e;
+}
 
+.dog-info h3{
+  text-align: center;
+}
 
-
-
-
-
-
+.dog-text blockquote{
+  background-color: #fcb43e;
+  border-radius: 10px;
+}
 
 /* Media Queries (On met ca a derrier)*/
-@media screen and (max-width: 770px) {
-    .navbar-nav li{
-        width:100%;
-        border:none;
+@media screen and (max-width: 1210px) {
+    .nav-brand-extra{ 
+      display:none;
     }
-    .navbar-inverse .nav > li > a{
-        border:none;
+}
+@media screen and (max-width: 770px) {
+    .navbar{
+      padding-top:20px;
     }
 
+    .navbar-brand a{
+      font-size: 30px;
+    }
+  .navbar .nav-pills >li >a{
+    padding:10px;
+
+ }
     .navbar-inverse .nav li
     {
+        padding:10px 10px;
+        border-bottom: 1px solid #34495e;
         width:100%;
         text-align: center;
+
     }
     .navbar-inverse .nav > li.active, 
     .navbar-inverse .nav > li.active,
@@ -530,6 +551,4 @@ height: 90px;
     margin-top:0px;
     height: 50px;
     }
-
-
 }
