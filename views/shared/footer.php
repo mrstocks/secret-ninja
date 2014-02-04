@@ -56,13 +56,7 @@
           <div class="col-md-7">
             <h3 class="footer-title">Un peut sur moi.</h3>
             <?php echo helper::image_tag("/public/images/IMG_0138.png", "rounded float-left-margin-left-15"); ?>
-            <p>Bonjour, mon noms est Oliver je suis Anglais et j'ai travaill&eacute; dans l'informatique pour dix ans, en 2009/2010 j'ai 
-               decid&eacute; de prendre l'aire donc je suis venu dans la belle campagne normande pour faire mon m&eacute;ti&eacute; que 
-               je reve de faire, l'elevage canins.<br/>
-               Aussi je vais des site web pour les amis ou personnel vous aimez ce site je peut peut-etre vous aider.<br/>
-               Envoyez un mail dand ce cas: <a href="mailto:stocks.oliver@gmail.com" target="_blank">stocks.oliver@gmail.com</a>
-            </p>
-
+	    <p>Bonjour je suis oliver, 
           </div> <!-- /col-md-7 -->
 
           <div class="col-md-5">
