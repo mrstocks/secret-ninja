@@ -6,12 +6,12 @@
 
 <div class="container">
  <section class="jumbotron rounded-border" id="content">
-          <h3>Bienvenue</h3>
-          <p>Vous êtes à la recherche d'un nouveau chien ou chiot à partager votre vie avec?<br />
-Nous sommes ici pour vous fournir tout ce que vous avez été cherchez!
-  </p>
+          <h3>Bienvenue au f&eacute;es de celestia</h3>
+          <p>Nous sommes un tout petit elevage de doggue allemand dans la mayenne. Si vous aimez les images ou un chiot n'hesitez pas <a href="/index.php/contact">contactez-moi</a>! Nous sommes
+             toujours disponnibles pour vous aidez meme si vous voulez pas un chiots.
+  	</p>
  <p>
-   Membre du Doggen Club de France depuis 2009.
+   Membre du Doggen Club de France depuis 2009. 
  </p>
   </section>
 
