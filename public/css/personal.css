@@ -1,5 +1,5 @@
 body{
-  background-image: url(http://farm9.staticflickr.com/8478/8176819849_fb94e10e1b_b.jpg);
+  background-image: url(http://cdn.elevage-fees-de-celestia.fr/static/8176819849_fb94e10e1b_b.jpg);
   height: 100%;
   width:100%;
   background-attachment: fixed;
@@ -513,7 +513,7 @@ h6 {
 }
 
 .dog-text blockquote{
-  background-color: #fcb43e;
+  background-color: #ececec;
   border-radius: 10px;
 }
 
