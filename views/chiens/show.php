@@ -7,12 +7,12 @@
 
 
 	<div class="row">
-		<div class="col-lg-7" style="padding-top: 15px;">
+		<div class="col-lg-7">
 			<div  class="dog-carrousel">
    			<?php $helper::carrousel($dog_by_id->dogimages, "dogimage"); ?>
    			</div>
-   		<div class="dog-info">
-		<section class="jumbotron rounded-border" id="content">
+   		<div class="rounded-border jumbotron  dog-info">
+		<section id="content">
    			<h3>Plus d'informations</h3>
 		</section>
 		<br style="clear: all;" />
