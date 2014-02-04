@@ -1,13 +1,5 @@
 <?php 
 /**
- * For the developement site the errors to true
- *
- */
-$start = microtime(true);
-ini_set('display_errors', 'Off');
-error_reporting(E_ALL);
-
-/**
  * Require my stupid config
  * If someone wants to fix me. please do
  */

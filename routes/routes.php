@@ -72,7 +72,7 @@ class Routes {
 	}
 }
 
-$routes = New Routes($_SERVER['PHP_SELF']);
+$routes = New Routes($_SERVER['REQUEST_URI']);
 $routes->parse($routes->php_self);
 
 // testing
@@ -83,4 +83,9 @@ $routes->parse($routes->php_self);
 	echo $routes->id."<br />";
 	echo "</pre>";
 */
+
+#echo "<pre>";
+#print_r($_SERVER);
+#echo "</pre>";
+#:exit;
 ?>

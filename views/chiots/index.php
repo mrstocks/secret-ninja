@@ -20,7 +20,7 @@
 						foreach($mating->matingpuppies as $id => $puppy) 
 						{ 
 
-							Helper::puppylist($mating_title, $puppy->image, $puppy->sex, $puppy->color, $puppy->price, $puppy->name, $puppy->information);
+							Helper::puppylist($puppy->id,$mating_title, $puppy->image, $puppy->sex, $puppy->color, $puppy->price, $puppy->name, $puppy->information);
 						}
 					}
 			?>

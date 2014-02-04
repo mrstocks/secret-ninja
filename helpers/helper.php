@@ -133,7 +133,7 @@ class Helper {
 	/***
 	 *
 	 */
-        public static function puppylist($mating_title, $image, $sex, $color, $price, $name, $information)
+        public static function puppylist($id,$mating_title, $image, $sex, $color, $price, $name, $information)
         {
             echo '  <div class="chiot rounded-border">
                       <div class="panel panel-default">
@@ -143,14 +143,14 @@ class Helper {
                       </div>
                       <div class="panel-body">
                           <div class="col-md-4 img-thumbnail">
-                            <img src="'.$image.'" alt="Dog Image">
+			   '. self::cdn_image($image, 'matingpuppy',$id, 'image','') .'
                           </div>
                           <div class="col-md-8">
                             <p><span>Accouplement:</span> '.$mating_title.'</p>
                             <p><span>Pris:</span> '.$price.' &euro;</p>
                             <p><span>Sexe:</span> '.$sex.'</p>
                             <p><span>Couleur:</span> '.$color.'</p>
-                            <p><span>Plus d\'informations:</span><br/> '.$information.'</p>
+                            <p><span>Plus d\'informations:</span> '.$information.'</p>
                             <p><span>Plus de photo? ou De l\'aide? <a href="/index.php/contact">Contactez nous</a></span></p>
                           </div>
                       </div>

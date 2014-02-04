@@ -1,6 +1,6 @@
 
 body{
-  background-image: url(/public/images/bg-pull2.jpg);
+background-image: url(http://farm9.staticflickr.com/8478/8176819849_fb94e10e1b_b.jpg);
   height: 100%;
   width:100%;
   background-attachment: fixed;
@@ -373,6 +373,10 @@ height: 90px;
   margin-bottom: 10px;
   background-color: white;
   border-radius: 0;
+  background-color: white;
+  opacity:0.8;
+  filter:Alpha(opacity=80); /* IE8 and earlier */
+  border-bottom: 1px solid red;
 }
 
 .news-item{
@@ -457,7 +461,7 @@ height: 90px;
 }
 
 .chiot .panel-heading{
-  background-color: #d00857;
+  background-color: #CCCCCC;
   border-radius: 4px;
   line-height: 13px;
 }
