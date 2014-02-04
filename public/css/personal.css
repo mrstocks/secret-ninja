@@ -1,9 +1,7 @@
 body{
-background-image: url(http://farm9.staticflickr.com/8478/8176819849_fb94e10e1b_b.jpg);
+background-image: url(/public/images/bg-pull2.jpg);
   height: 100%;
   width:100%;
-  repeat:none;
-  background-size:cover;
   background-attachment: fixed;
 }
 
