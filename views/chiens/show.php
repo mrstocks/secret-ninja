@@ -5,7 +5,6 @@
     <h3><?php echo $dog_by_id->name ?></h3>
 </section>
 
-<br style="clear: all">
 
 	<div class="row">
 		<div class="col-lg-7" style="padding-top: 15px;">
