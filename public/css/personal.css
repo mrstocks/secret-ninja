@@ -366,11 +366,9 @@ h6 {
   margin-bottom: 10px;
   background-color: white;
   border-radius: 0;
-  background-color: white;
   opacity:0.8;
   filter:Alpha(opacity=80); /* IE8 and earlier */
   border-bottom: 1px solid red;
-
 }
 
 .news-item{
