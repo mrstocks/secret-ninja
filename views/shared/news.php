@@ -10,7 +10,7 @@ $news = News::all($options);
 
 echo "<ul>";
 foreach($news as $new) {
-	echo "<li><small><a href='index.php/news/view/".$new->id ."'>". $new->title ."</a></small></li>";
+	echo "<li><small><a href='/index.php/news/view/".$new->id ."'>". $new->title ."</a></small></li>";
 }
 echo "</ul>";
 

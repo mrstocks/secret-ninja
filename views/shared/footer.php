@@ -49,14 +49,14 @@
       </div> <!-- /tiles -->
 </section>
 </div>
-<br style="clear: all;" />
+
    <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-7">
             <h3 class="footer-title">Un peut sur moi.</h3>
             <?php echo helper::image_tag("/public/images/IMG_0138.png", "rounded float-left-margin-left-15"); ?>
-	    <p>Bonjour je suis oliver, 
+	    <p>Bonjour je suis Oliver, ex webmaster. Depuis 2009 j'ai decider de prendre l'air dans la campagne normande . a faire un élevage de dog allemand , nous avons pris un chin qui 'apelle finouka chez les rêve de burton 'était le début de la passion pour ses types de chiens maintenant l'élevages'agrandit qui comporte issi, et hyro. Dans le temps libre nous fesons également des site web pour les éleveur de chiens. Si vous étent interessé visitez notre section contact.
           </div> <!-- /col-md-7 -->
 
           <div class="col-md-5">

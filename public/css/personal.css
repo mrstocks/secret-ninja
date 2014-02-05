@@ -1,5 +1,5 @@
 body{
-  background-image: url(http://cdn.elevage-fees-de-celestia.fr/static/8176819849_fb94e10e1b_b.jpg);
+  background-image: url(/public/images/bg-pull2.jpg);
   height: 100%;
   width:100%;
   background-attachment: fixed;
@@ -11,7 +11,7 @@ body{
 .rounded-border{
   border:2px solid white; 
   border-radius: 10px;
-  margin:0px;
+  margin:10px 0;
 }
 .float-left-margin-left-15 {
    float: left;
@@ -265,14 +265,17 @@ div.hr hr {
 
 footer {
   margin-top: 20px;
-    background-color: #333333;
+  background-color: #333333;
 }
 
-footer .footer-banner {
+footer img{
+  height: 100%;
+}
+footer .footer-banner{
+  margin-top: 20px;
    height:100%;
    background-color: #074e68;
    min-height: 0px;
-   background-size: cover;
 }
 
 .tile{
@@ -515,6 +518,37 @@ h6 {
   border-radius: 10px;
 }
 
+
+.footer-banner{
+  padding-top: 20px;
+  background-color: #074e68;
+  min-height: 0px;
+}
+
+.small-btn{
+  width:auto;
+  max-width:200px;
+  margin: 0 auto;
+}
+
+.news-proper{
+  height: auto;
+  background-color: #eff6ff;
+  padding:10px;
+}
+
+.news-proper img{
+  margin-bottom: 20px;
+  max-width: 100%
+}
+
+.news-proper h4{
+  text-align: center;
+}
+
+.news-proper{
+  text-align: center;
+}
 /* Media Queries (On met ca a derrier)*/
 @media screen and (max-width: 1210px) {
     .nav-brand-extra{ 

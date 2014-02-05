@@ -8,14 +8,7 @@
   </section>
 
   </div>
-
-<?php
-	/* To Do
-	- style the various tiles
-	- create a fade out css effect
-   */
-?>
-<br style="clear: all">
+  
 	<div class="container">
 	<script src="/public/js/masonry.pkgd.min.js"></script>
 	<div class="row">
