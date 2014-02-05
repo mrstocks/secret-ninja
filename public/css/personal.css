@@ -50,9 +50,7 @@ body{
 .float-left {
    float:left;
 }
-/* TO DO 
-- Remove the boders in the msg section
-*/
+
  .gallery-tile {
    display: block;
    float:left;
@@ -206,6 +204,9 @@ div.hr hr {
    border-radius: 50%;
 }
 
+.featured-post a{
+  background-color:#40a048;
+}
 .featured-post h5 {
    margin:0;
    padding:0;
@@ -541,6 +542,12 @@ h6 {
     }
 }
 @media screen and (max-width: 770px) {
+  .vjs-default-skin .vjs-big-play-button {
+   top:40%;
+   left: 35%;
+}
+
+
     .navbar{
       padding-top:20px;
     }

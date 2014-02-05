@@ -53,11 +53,11 @@
 
        <div class="front-page-video rounded-border">
        	<div>
-			<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="100%" height="570" poster="http://video-js.zencoder.com/oceans-clip.png" data-setup="{}">
+			<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="100%" height="570" poster="/public/images/poster.jpg" data-setup="{}">
 				<source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
 				<source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
 				<source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
 			</video>
-
       	</div>
+      </div>
       </div>
