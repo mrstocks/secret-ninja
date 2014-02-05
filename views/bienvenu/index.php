@@ -6,7 +6,7 @@
 
 <div class="container">
  <section class="jumbotron rounded-border" id="content">
-          <h3><?php echo 'Finouka a reçu un trophée' ?>   Bienvenue au f&eacute;es de celestia</h3>
+          <h3>Bienvenue au f&eacute;es de celestia</h3>
 <p>
 Nous sommes un tout petit élevage de dogue allemand dans la Mayenne. Si vous aimez les images ou un chiot n'hésitez pas <a href="/index.php/contact">contactez-moi</a>! Nous sommes toujours disponibles pour vous aidez même si vous ne voulez pas un chiot.
         </p>
