@@ -1,11 +1,12 @@
 body{
-  background-image: url(http://cdn.elevage-fees-de-celestia.fr/static/gb2.jpg);
+  background-image: url(/public/images/bg-pull2.jpg);
   height: 100%;
   width:100%;
   background-attachment: fixed;
 }
 .row {
 }
+
 
 .rounded-border{
   margin:10px 0;
@@ -217,7 +218,8 @@ div.hr hr {
 .jumbotron {
    margin-top: none;
    padding:10px 0;
-    background: black url(/public/images/hero_bg.gif) repeat;
+  background:url(/public/images/hero_bg.gif) repeat;
+    color:#002;
    font-family:Lato, Helvetica, Arial, sans-serif;
 }
 .jumbotron p {
@@ -233,8 +235,8 @@ div.hr hr {
 }
 .new-dogs {
     padding: 30px 0;
-   background: black url(/public/images/hero_bg.gif) repeat; 
-   color:#191919;
+   background-color: #29001A;
+   color:#ffd;
    text-align: center;
 }
 .news-item {
@@ -370,18 +372,19 @@ h6 {
   border-bottom: 1px solid red;
   border-radius: 0;
   background-color: white;
-  opacity:0.8;
-  filter:Alpha(opacity=80); /* IE8 and earlier */
+  opacity:0.9;
+  filter:Alpha(opacity=90); /* IE8 and earlier */
 }
 
 .news-item{
-  background-color: white;
+  background-color: #eff6ff;
 }
 
 .news{
+    color:#ffe;
     padding-bottom: 30px;
     border-radius: 4px;
-    background-color: #EEEEEE;
+    background-color: #2D001A;
 }
 
 .news-item p,
@@ -423,6 +426,7 @@ h6 {
 }
 
 .news-item .glyphicon-pushpin{
+  color:green;
   position:absolute;
   top:-3%;
   left:97%;
@@ -521,6 +525,7 @@ h6 {
   padding:10px;
   height: auto;
   background-color: #eff6ff;
+  text-align:center;
 }
 
 .news-proper img{
@@ -529,10 +534,6 @@ h6 {
 }
 
 .news-proper h4{
-  text-align: center;
-}
-
-.news-proper{
   text-align: center;
 }
 

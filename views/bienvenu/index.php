@@ -7,8 +7,8 @@
 <div class="container">
  <section class="jumbotron rounded-border" id="content">
           <h3>Bienvenue au f&eacute;es de celestia</h3>
-<p>
-Nous sommes un tout petit élevage de dogue allemand dans la Mayenne. Si vous aimez les images ou un chiot n'hésitez pas <a href="/index.php/contact">contactez-moi</a>! Nous sommes toujours disponibles pour vous aidez même si vous ne voulez pas un chiot.
+          <p>Nous sommes un tout petit élevage de dogue allemand dans la Mayenne. <br/>
+            <a href="/index.php/contact">Contactez-moi</a> si vous veunez un chiot ou vous aimez les images ou un chiot!<br/>
         </p>
 
  <p>
@@ -39,7 +39,6 @@ Nous sommes un tout petit élevage de dogue allemand dans la Mayenne. Si vous ai
 
 <div class="new-dogs rounded-border" >
         <div class="row">
-	  <h3>Nos Chiens</h3>
             <div class="col-md-12">
                <?php Helper::featured_posts($featured_posts) ?>
             </div>
