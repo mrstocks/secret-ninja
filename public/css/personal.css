@@ -1,5 +1,5 @@
 body{
-  background-image: url(/public/images/bg-pull2.jpg);
+  background-image: url(http://cdn.elevage-fees-de-celestia.fr/static/gb2.jpg);
   height: 100%;
   width:100%;
   background-attachment: fixed;
@@ -372,8 +372,8 @@ h6 {
   border-bottom: 1px solid red;
   border-radius: 0;
   background-color: white;
-  opacity:0.9;
-  filter:Alpha(opacity=90); /* IE8 and earlier */
+  opacity:0.7;
+  filter:Alpha(opacity=70); /* IE8 and earlier */
 }
 
 .news-item{
