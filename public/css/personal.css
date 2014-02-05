@@ -4,7 +4,6 @@ body{
   width:100%;
   background-attachment: fixed;
 }
-
 .row {
 }
 
@@ -187,9 +186,7 @@ footer ul {
 .intro {
    color: #c3a26F;
 }
-.news {
-   text-decoration: underline;
-}
+
 div.hr {
    height: 2px;
    background: #fff url(/public/images/hr.png) repeat-y scroll center;
@@ -205,6 +202,7 @@ div.hr hr {
 }
 
 .featured-post a{
+  text-decoration: none;
   background-color:#40a048;
 }
 .featured-post h5 {
@@ -541,6 +539,10 @@ h6 {
 
 .dog-info{
   padding-top:0;
+}
+
+a{
+  text-decoration: none;
 }
 
 /* Media Queries (On met ca a derrier)*/
