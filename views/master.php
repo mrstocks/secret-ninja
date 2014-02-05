@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>Fees de Celestia - Elevage de Dogue allemand en France</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nous Sommes non tout petit elevage de doggue allemand Dans La mayenne qui vendent des chiens et des chiots au meilleur prix possible!" />
+    <meta name="keywords" content="chiens, animaux familiers, chiots, chiens à vendre, chiens, chiots, chiots à vendre | dogs,pets,puppies,dogs for sale,Dogs,puppy,puppy dogs,pets for sale" />
+    <meta name="author" content="(C) 2014  Elevage Fees De Celestia">
+
     <link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon">
 

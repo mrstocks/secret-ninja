@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /public
+Disallow: /config/
+Disallow: /models/
+Disallow: /controllers/
+Disallow: /routes/
+Disallow: /helpers/
+Disallow: /controllers/
+Disallow: 404.html
