@@ -22,7 +22,6 @@
         <div class="row">
             <div class="col-md-5 news">
               <div class="news-post">
-                <span class="glyphicon glyphicon-pushpin"></span>
                 <?php require __DIR__ . "/../shared/stickynews.php"; ?>
               </div>
               <div class="horizontal-divider"></div>

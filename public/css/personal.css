@@ -381,10 +381,10 @@ h6 {
 }
 
 .news{
-    color:#ffe;
+    color:#333;
     padding-bottom: 30px;
     border-radius: 4px;
-    background-color: #2D001A;
+    background-color: #eff6ff;
 }
 
 .news-item p,
@@ -423,16 +423,6 @@ h6 {
 .news-heading h6{
   margin:0;
   text-align: left;
-}
-
-.news-item .glyphicon-pushpin{
-  color:green;
-  position:absolute;
-  top:-3%;
-  left:97%;
-}
-.glyphicon-pushpin{
-    font-size: 22px;
 }
 
 .chiot{
