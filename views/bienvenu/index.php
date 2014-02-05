@@ -53,18 +53,10 @@
 
        <div class="front-page-video rounded-border">
        	<div>
-<<<<<<< HEAD
-			<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="100%" height="570" poster="http://cdn.elevage-fees-de-celestia.fr/video/poster.png" dagta-setup="{}">
-				<source src="http://cdn.elevage-fees-de-celestia.fr/video/MVI_0384.mp4.mp4" type='video/mp4' />
-				<source src="http://cdn.elevage-fees-de-celestia.fr/video/MVI_0384.webmsd.webm" type='video/webm' />
-				<source src="http://cdn.elevage-fees-de-celestia.fr/video/MVI_0384.oggtheora.ogv" type='video/ogg' />
-=======
 			<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="100%" height="570" poster="/public/images/poster.jpg" data-setup="{}">
 				<source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
 				<source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
 				<source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
->>>>>>> 8d118a9cabd90ac371e33956d373164c5a969d35
-			</video>
       	</div>
       </div>
       </div>

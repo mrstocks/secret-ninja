@@ -1,12 +1,7 @@
 body{
-<<<<<<< HEAD
   background-image: url(http://cdn.elevage-fees-de-celestia.fr/static/gb2.jpg);
   height: 100%;
-=======
->>>>>>> 8d118a9cabd90ac371e33956d373164c5a969d35
   width:100%;
-  height: 100%;
-  background-image: url(/public/images/bg-pull2.jpg);
   background-attachment: fixed;
 }
 
@@ -270,6 +265,7 @@ div.hr hr {
 }
 
 footer {
+  padding-top: 2px;
   margin-top: 20px;
   background-color: #333333;
 }
@@ -278,9 +274,9 @@ footer img{
   height: 100%;
 }
 footer .footer-banner{
-  margin-top: 20px;
    min-height: 0px;
    height:100%;
+    padding-top: 0px;
    background-color: #074e68;
 }
 
