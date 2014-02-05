@@ -11,13 +11,11 @@
 			<div  class="dog-carrousel">
    			<?php $helper::carrousel($dog_by_id->dogimages, "dogimage"); ?>
    			</div>
-   		<div class="rounded-border jumbotron  dog-info">
-		<section id="content">
-   			<h3>Plus d'informations</h3>
-		</section>
-		</div>
+   	<div class="rounded-border jumbotron  dog-info">
+	   			<h3>Plus d'informations</h3>
 		<br style="clear: all;" />
  		<?php echo $dog_by_id->textdog ?>
+		</div>
 		</div>
 		<div class="col-lg-5">
 			<div class="dog-text">

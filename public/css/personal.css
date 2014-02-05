@@ -480,6 +480,7 @@ h6 {
 
 .table-striped{
   padding:10px;
+  margin-top: 0;
   border-radius: 10px;
   background-color:#d8dfe5;
 }
@@ -497,6 +498,7 @@ h6 {
 
 .dog-info h3{
   text-align: center;
+  margin-bottom: 0;
 }
 
 .dog-text blockquote{
@@ -534,6 +536,11 @@ h6 {
 
 .news-proper{
   text-align: center;
+}
+
+
+.dog-info{
+  padding-top:0;
 }
 
 /* Media Queries (On met ca a derrier)*/

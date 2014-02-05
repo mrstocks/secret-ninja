@@ -236,7 +236,7 @@ class Helper {
                   	<div class="post-image">
                     		'.self::cdn_image($value->filename,'frontpagepost', $value->id, 'filename','').'
                     	</div>
-                    	<div clas="post-caption">
+                    	<div class="post-caption">
 	                    <h5>'.$value->name. '</h5>
 	                        <p>'.$value->caption.'</p>
 	                    </div>

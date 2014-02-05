@@ -32,7 +32,7 @@
         </div>
 
         <div class="col-md-3">
-          <div class="tile tile-hot">
+          <div class="tile tile">
             <?php echo helper::image_tag('/public/images/icons/png/Chat.png', 'title-image'); ?>
             <h3 class="tile-title">Social network</h3>
             <p>Nous sommes sociale! Venir nous voir sur facebook</p>
@@ -41,13 +41,7 @@
 
         </div>
       </div> <!-- /tiles --> 
-</div>
-
-
-  </div>
-   <footer style="">
-      </div> <!-- /tiles -->
-</section>
+      </section>
 </div>
 
    <footer>
