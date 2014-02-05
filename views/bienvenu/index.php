@@ -7,9 +7,10 @@
 <div class="container">
  <section class="jumbotron rounded-border" id="content">
           <h3>Bienvenue au f&eacute;es de celestia</h3>
-          <p>Nous sommes un tout petit elevage de doggue allemand dans la mayenne. Si vous aimez les images ou un chiot n'hesitez pas <a href="/index.php/contact">contactez-moi</a>! Nous sommes
-             toujours disponnibles pour vous aidez meme si vous voulez pas un chiots.
-  	</p>
+<p>
+Nous sommes un tout petit élevage de dogue allemand dans la Mayenne. Si vous aimez les images ou un chiot n'hésitez pas <a href="/index.php/contact">contactez-moi</a>! Nous sommes toujours disponibles pour vous aidez même si vous ne voulez pas un chiot.
+        </p>
+
  <p>
    Membre du Doggen Club de France depuis 2009. 
  </p>
