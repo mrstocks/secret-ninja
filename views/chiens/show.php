@@ -13,9 +13,9 @@
    			</div>
    	<div class="rounded-border jumbotron  dog-info">
 	   			<h3>Plus d'informations</h3>
-       </div>
 		<br style="clear: all;" />
  		<?php echo $dog_by_id->textdog ?>
+		</div>
 		</div>
 		<div class="col-lg-5">
 			<div class="dog-text">
