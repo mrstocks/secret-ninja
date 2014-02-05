@@ -20,7 +20,6 @@
     <link href="/public/css/video-js.css" rel="stylesheet" type="text/css">
     <script src="/public/js/video.js"></script>
     <link href="/public/css/personal.css" rel="stylesheet">
-    <link href="/public/css/lightbox.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
