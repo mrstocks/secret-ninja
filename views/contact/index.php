@@ -120,8 +120,7 @@
                                          France<br/>
                                          <!-- Phone number -->
                                          <label>Phone: </label> (0033) 6765913293.
-                                         <label>Email:</label> <a href="mailto:stocks.oliver@gmail.com">stocks.oliver@gmail.com</a><br/>
-                                         <label>CV: </label> <a href="#">Download PDF version</a>
+                                         <label>Email:</label> <a href="mailto:stocks.oliver@gmail.com">stocks.oliver@gmail.com</a>
 								</address>
 					</div>
  					</div>
