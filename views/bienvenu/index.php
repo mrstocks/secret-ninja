@@ -56,11 +56,10 @@
                 Rien ne nous rend heureux comme voir nos chiens jouent<br/>
             </div>
        	<div>
-			<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="100%" height="570" poster="http://video-js.zencoder.com/oceans-clip.png" data-setup="{}">
-				<source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-				<source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
-				<source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+			<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="100%" height="570" poster="http://cdn.elevage-fees-de-celestia.fr/video/poster.png" dagta-setup="{}">
+				<source src="http://cdn.elevage-fees-de-celestia.fr/video/MVI_0384.mp4.mp4" type='video/mp4' />
+				<source src="http://cdn.elevage-fees-de-celestia.fr/video/MVI_0384.webmsd.webm" type='video/webm' />
+				<source src="http://cdn.elevage-fees-de-celestia.fr/video/MVI_0384.oggtheora.ogv" type='video/ogg' />
 			</video>
-
       	</div>
       </div>
