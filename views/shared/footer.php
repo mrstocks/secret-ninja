@@ -2,8 +2,10 @@
 <div class="container">
 <section class="demo-tiles rounded-border">
      <div class="row">
-     <h4>Rester en contact et de ne jamais manquer les bonnes choses</h4>
-        <div class="col-md-3">
+     <div class="col-md-12">
+     <h4>Rester en contact et de ne jamais manquer les bonnes choses</h4
+     </div>        
+     <div class="col-md-3">
           <div class="tile">
 	    <img src="/public/images/icons/png/Map.png" height="100" width="100" class="title-image" />
             <h3 class="tile-title">Visitez nous</h3>
