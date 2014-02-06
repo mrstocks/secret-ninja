@@ -42,9 +42,8 @@
     </script>
   <div class="container">
 	<section class="jumbotron rounded-border" id="content">
-          	<h3>Contactez-nous</h3>
-          	<p>S'il vous plaît nous localiser à l'aide de notre carte ci-dessous.<br/>
- 				Vous pouvez aussi parler à nous en laissant <a href="#contact">un message ici.</a>
+          	<h3>Contactez-nous</h3><p>
+Vous pouvez nous localiser aisément grâce à la carte présentée ci-dessous.>
 				</p>
   </section>
   </div>

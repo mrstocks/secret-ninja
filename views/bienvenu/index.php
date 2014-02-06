@@ -6,14 +6,13 @@
 
 <div class="container">
  <section class="jumbotron rounded-border" id="content">
-          <h3>Bienvenue au f&eacute;es de celestia</h3>
-          <p>Nous sommes un tout petit élevage de dogue allemand dans la Mayenne. <br/>
-            <a href="/index.php/contact">Contactez-moi</a> si vous veunez un chiot ou vous aimez les images ou un chiot!<br/>
-        </p>
-
- <p>
-   Membre du Doggen Club de France depuis 2009. 
- </p>
+	<h3>Bienvenue aux fées de Celestia</h3>
+	<p>
+		Nous sommes un tout petit élevage de dogues allemands dans la Mayenne<br />
+		 <a href="/index.php/contact">Contactez-moi</a> si vous souhaitez faire l'acquisition d'un chiot ou que vous appréciez les images ou u chiot!</p>
+	<p>
+		Membre du Doggen Club de France depuis 2009.
+ 	</p>
   </section>
 
 <br style="clear: all;" />

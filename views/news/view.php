@@ -7,8 +7,10 @@
       <div class="container">
         <section class="jumbotron rounded-border" id="content">
           	<h3>Nos Journal</h3>
-          	<p>Levez-vous à jour avec les dernières nouvelles et nos événements intéressants
+          	<p>
+  		Soyez à jour avec les toutes dernières nouvelles et les évènements à ne pas manquer !
 			</p>
+
   			</section>
 	<div class="row">
 		<div class="col-md-3">

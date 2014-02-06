@@ -2,8 +2,9 @@
         <div class="container">
         <section class="jumbotron rounded-border" id="content">
           <h3>Notre Galerie</h3>
-          <p>Voici quelques-uns des grands points de vue que nous avons capturés sur le film (ou la mémoire numérique!)<br />
-			Cliquez sur un chien disponible pour en savoir plus.
+	<p>
+		Voici quelques-unes des meilleurs scènes que nous ayons pu retranscrire sur la pellicule (ou via un appareil numérique).<br />
+		Cliquez sur un chien disponible pour en savoir plus. 
 	</p>
   </section>
 
