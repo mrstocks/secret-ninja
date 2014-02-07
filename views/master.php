@@ -12,8 +12,7 @@
     <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon">
 
     <!-- Loading Bootstrap -->
-    <link href="/public/bootstrap/css/bootstrap.css" rel="stylesheet">
-
+    <link href="/public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Loading Flat UI -->
     <link href="/public/css/flat-ui.css" rel="stylesheet">
      <link href="/public/css/lightbox.css" rel="stylesheet">
